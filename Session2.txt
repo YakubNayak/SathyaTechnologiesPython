@@ -1,0 +1,40 @@
+Date: 22-09-2021
+-----------------
+
+Python Demo class
+====================
+today agenda
+-----------------
+1. what is computer
+2. what is software
+3. what language
+4. what is program
+5. why we learn program.
+6. types software
+7. what kind of programing language we are using
+8. which pl for which application
+9. programing structure 
+10. why python is great
+------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Date:23-09-2021
+---------------------------------------------------
+python Applications/ softwares
+------------------------------
+1. standalone application
+2. window application
+3. web based application
+4. enterprice application
+5. testing application
+6.data basecapplication
+7.robotics application
+8. AI ( artificiall intelligence)
+9. mechine learning 
+10. data science Application
+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
