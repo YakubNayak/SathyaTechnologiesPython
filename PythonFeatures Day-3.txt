@@ -1,0 +1,90 @@
+Python Features
+-----------------
+1) Easy to Learn and Use
+--------------------------
+--> Python is easy to learn as compared to other programming languages.
+Its syntax is straight forward and much the same as the English language.
+There is no use of the semicolon or curly-bracket,
+the indentation defines the code block. 
+so
+It is the recommended programming language for beginners.
+
+
+
+
+2) Expressive Language
+----------------------
+Python can perform complex tasks using a few lines of code.
+A simple example, the hello world program you simply 
+type print("Hello World"). 
+It will take only one line to execute, while Java or C takes multiple lines.
+
+
+
+
+3) Interpreted Language
+-----------------------
+Python is an interpreted language; it means the Python program 
+is executed one line at a time. The advantage of being interpreted 
+language, it makes debugging easy and portable.
+
+
+
+
+4) Free and Open Source
+-----------------------
+Python is freely available for everyone. 
+It is freely available on its official website www.python.org. 
+It has a large community across the world that is dedicatedly working 
+towards make new python modules and functions. 
+Anyone can contribute to the Python community. 
+The open-source means, "Anyone can download its source code 
+without paying any penny."
+
+
+5) Object-Oriented Language
+----------------------------
+Python supports object-oriented language and concepts of classes
+and objects come into existence. 
+It supports inheritance, polymorphism, and encapsulation, etc. 
+The object-oriented procedure helps to programmer
+to write reusable code and develop applications in less code.
+
+
+6) Extensible
+-------------
+It implies that other languages such as C/C++ can be used to 
+compile the code and thus it can be used further 
+in our Python code. It converts the program into byte code,
+and any platform can use that byte code.
+
+7) Large Standard Library
+-------------------------
+It provides a vast range of libraries for the various fields such 
+as machine learning, web developer, and also for the scripting. 
+There are various machine learning libraries, 
+such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc. 
+Django, flask, pyramids are the popular framework for Python web development.
+
+9) GUI Programming Support
+----------------------------
+Graphical User Interface is used for the developing 
+Desktop application. PyQT5, Tkinter, 
+Kivy are the libraries which are used for developing the web application.
+
+10. Embeddable
+--------------
+The code of the other programming language can use 
+in the Python source code. We can use Python 
+source code in another programming language as well. 
+It can embed other language into our code.
+
+12. Dynamic Memory Allocation
+------------------------------
+In Python, we don't need to specify the data-type of the variable. 
+When we assign some value to the variable, it automatically 
+allocates the memory to the variable at run time. 
+
+Suppose we are assigned integer value 15 to x, 
+then 
+we don't need to write int x = 15. Just write x = 15.
