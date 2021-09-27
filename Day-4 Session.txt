@@ -1,0 +1,154 @@
+Python Features
+-----------------
+1. Easy to learn and use
+2. Expressive language
+3. Interprated Programing language
+5. Free and Open Source.
+6 .plat from independent Programing Language.
+7. Extensible PL:
+8. Rich Library:
+
+9. GUI Programing Support 
+10.Dynamic Memory Allocation(Dynamic PL):
+11.object oriented Programing language:
+--> OOPS --> 
+class, object, inheritence,polymorphism, encapsultaion  and abstraction...etc
+
+12.Embeddable
+++++++++++++++
+
+1. Easy to learn and use
+----------------------------
+using english , don't use method body with { }, dont use semicolon at end of stmt.
+
+2. Expressive language
+------------------------
+--> 
+3. Interprated Programing language
+----------------------------------------
+5. Free and Open Source.
+---------------------------
+
+--> www.python.org
+
+open source ---> open read + open read edit also
+
+--> 
+
++++++++++++++++++++++++++++++++++++++++++++++
+6 .plat from independent Programing Language.
+++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Python History
+-------------------------
+what is python?
+who developed python PL?
+when developed Python PL?
+what is birth date of Python PL?
+what is python software name and what is current version of python?
+why python PL name is Python
+
+why python PL?
+
+----------------------------
+what is python?
+
+--> python is a general purpose PL.
+--> python is high Level PL and it is plat form idependent PL (portable PL).
+--> ABC , modula 3, C,C++,Java,html, javaScript, php, perl ....etc.
+
+who developed python PL?
+
+-------------------------
+Guido Van Rossum 
+
+Python was conceived in the late Dec 1980s 
+
+Date of birth 1991 Feb 26 th .
+
+
+--> java Dev 1990's
+ --> 1995
+
+-------------------------------------------
+TurboC
+turboc++
+JDK
+----------------------
+Python
+--------
+--> PVM --> python virtual mechine  (Interprator)
+python has 3 types of versions
+
+python 1.x    ---> testing purpose.  
+
+
+python 2.x  2004
+python 3.x  2008 dec
+
+The current version of python is
+--------------------------
+python 3.9.7
+
+
+--------------------------------
+why python PL name is Python
+--------------------------------
+
+1969 to 1970 BBC  'Monty's python Flying Circus"  
+
+--> python  
+
+----------------------------------
+why python PL?
+-------------------
+
+Web Development: Django, Pyramid, Bottle, Tornado, Flask, web2py
+GUI Development: tkInter, PyGObject, PyQt, PySide, Kivy, wxPython
+Scientific and Numeric: SciPy, Pandas, IPython
+Software Development: Buildbot, Trac, Roundup
+System Administration: Ansible, Salt, OpenStack, xonsh
+
+--------------------------------------------------------
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+How download and install python software
+------------------------------------------
+Download
+----------
+
+
+--> https://www.python.org/  ---> Download --> python 3.9.7
+
+--> install python software
+
+right click onit do run as adminitsrator
+
+click custom install --> C:\Python39   next ----> close
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+step2: set the path
+-----------------------
+--> path setting for to provide memory to our PVM to other drives also
+
+--> if our python source file save into python software folder no need to set the path 
+becouse of all supported file are avaialale in python software folder.
+
+--> suppose if we want save our source out side python software folder then need set the path.
+
+step1:
+-----
+mycomputer ---> C:drive --> python39
+
+C:\Python39  
+
+step2:
+------
+Mycomputer--> properties--> Advanced System settings---> Advanced ---> Environment Variable 
+
+System variable---> path---> Edit--> New--> C:\Python39
+
+ok---> ok--> ok
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
