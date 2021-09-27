@@ -1,0 +1,288 @@
+Set Collection
+---------------------
+--.> set is collection object.
+-- set can hold same type data elements and de similar type also.
+--. > in set object inserting order is not preserved.
+--> set object takes elements in random order.
+--> set does not support indexing and slicing concept.
+--> set is a immutable object.
+--> set object not accept duplicate elements.
+--> we can apply mathematecal operations line 
+union,intersection.....etc.
+
+-------------------------------------------------
+2. creating set
+------------------
+--> set can reparasent bybusing {}
+
+.
+>>> s={}
+>>> type(s)
+<class 'dict'>
+>>> s1={1}
+>>> type(s1)
+<class 'set'>
+>>> 
+
+
+==============================
+1. set creating with advanced
+
+------------------------
+s={10,20,30,40,50}   #homegenious data elements
+price={12.24,30.45,50.25}
+
+student_rollno={1,2,3,4,5,6,7}
+
+
+>>> x={1,2,3,4,5}
+>>> print(x)
+{1, 2, 3, 4, 5}
+>>> print(x)
+{1, 2, 3, 4, 5}
+>>> y={2,3,5,1,0}
+>>> print(y)
+{0, 1, 2, 3, 5}
+>>> ss={12,23,12,14,1,5}
+>>> print(ss)
+{1, 5, 12, 14, 23}
+>>> 
+
+2. by using eval()
+--------------------------
+
+The use of eval() function is take set object from keyboard
+
+>>> st=eval(input("Enter your set elements"))
+Enter your set elements{101,'Alekya','lavanya','raghi',20.00}
+>>> print(st)
+{101, 'raghi', 'Alekya', 'lavanya', 20.0}
+>>> type(st)
+<class 'set'>
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++
+3. by using tuple() and list() and range()
+----------------------------------------------------
+>>> food=['biryani','curdrice','soap',900.99]
+>>> food_item=set(food)
+>>> print(type(food_item))
+<class 'set'>
+>>> print(food_item)
+{900.99, 'biryani', 'curdrice', 'soap'}
+
++====================================
+>>> food=('biryani','curdrice','soap',900.99)
+>>> type(food)
+<class 'tuple'>
+>>> f_item=set(food)
+>>> type(f_item)
+<class 'set'>
+>>> print(f_item)
+{900.99, 'biryani', 'curdrice', 'soap'}
+>>> 
++++++=====================================+++
+range():
+--------
+ the use of range() function to generate sequence of numbres.
+
+ex:
+ range(10)   ---> 0,.............9)
+range(1,11) --> 1,      ........10
+ramge(5,45,5)   5,10,15,20,25,30,35,40
+
+range(1)    ---> 0
+range(0)  --> ()
+----------------------------------
+>>> s=set(range(1,20,2))
+>>> print(s)
+{1, 3, 5, 7, 9, 11, 13, 15, 17, 19}
+>>> 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3. Accessing set elements
+=======================
+1. by using for loop only
+2. by using iter() and next method only
+
+
+# accessing set elements by using for loop
+food={'biryani','curdrice','muttonBiryani','soap','butternon'}
+for item in food:
+    print(item,end='     ')
+
+
+output
+---------
+= RESTART: C:/Users/lenoo/AppData/Local/Programs/Python/Python36-32/set1.py =
+butternon
+soap
+curdrice
+biryani
+muttonBiryani
+>>> 
+= RESTART: C:/Users/lenoo/AppData/Local/Programs/Python/Python36-32/set1.py =
+muttonBiryani     butternon     curdrice     soap     biryani   
+
+
+===================================================
+# accessing set elements by using for loop
+food={'biryani','curdrice','muttonBiryani','soap','butternon'}
+obj=iter(food)
+print(next(obj))
+print(next(obj))
+print(next(obj))
+
+
+output
+=========
+soap
+muttonBiryani
+biryani
+
+
+
+
++++++++++++++++++++++++++++++++++++++=
+set method or function
+------------------------------
+1.add()
+
+--> the use of add() function is to add new ele to existing set object.
+
+ex:
+
+>>> flower={'rose','liily'}
+>>> flower.add('Lotus')
+>>> print(flower)
+{'Lotus', 'rose', 'liily'}
+
+
+2. update():
+========
+--> the use of update() function is to add new set object to existing set object.
+ex:
+>>> flower={'rose','liily'}
+>>> animal={'Lion','Tiger'}
+>>> flower.update(animal)
+>>> print(flower)
+{'rose', 'liily', 'Lion', 'Tiger'}
+=======================================
+3.copy()
+------------
+>>> old={'rose', 'liily', 'Lion', 'Tiger'}
+>>> new=old.copy()
+>>> print(new)
+{'rose', 'liily', 'Tiger', 'Lion'}
+>>> 
++++++++++++++++++++++++++++++++++++
+4. pop()
+----------
+--> remove elements from existing set object.
+the use pop() function is to remove elements from set randomlly.
+
+ex:
+>> s={'rose', 'liily', 'Tiger', 'Lion'}
+>>> s.pop()
+'rose'
+>>> s.pop()
+'liily'
+>>> 
+======================================
+5.remove()
+------------
+the use of remove() function to remove elements by using value.
+
+ex:
+----
+>>> ss={'rose', 'liily', 'Tiger', 'Lion'}
+>>> ss.remove('rose')
+>>> print(ss)
+{'liily', 'Lion', 'Tiger'}
+>>> 
+
+6.discard():
+------------
+>>> ss.remove('rose')
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    ss.remove('rose')
+KeyError: 'rose'
+>>> ss.discard(100)
+>>> print(ss)
+{'liily', 'Lion', 'Tiger'}
+>>> ss.discard('Tiger')
+>>> print(ss)
+{'liily', 'Lion'}
+>>> 
+++++++++++++++++++++++++++++++
+7. clear()
+---------
+>>> f={'liily', 'Lion'}
+>>> print(f)
+{'liily', 'Lion'}
+>>> f.clear()
+>>> print(f)
+set()
+>>> 
+
+mathametcal functions
+====================
+1. union()    or     |     ex: x|y
+2. intersection()  or &    ex: x&y
+
+3. difference ()  or    -   ex:  x-y
+
+4. Symmentric_difference()  or   ^
+
+---------------------------------------------------------
+
+EX:
+
+# program for set math functions
+x={10,20,30,40,50}
+y={40,10,90,70,50}
+
+print(x.union(y))
+print(x.intersection(y))
+print(x.difference(y))
+print(x.symmetric_difference(y))
+print("==============================")
+print(x|y)
+print(x&y)
+print(x-y)
+print(x^y)
+
+
+output
+-----------
+{70, 40, 10, 50, 20, 90, 30}
+{40, 10, 50}
+{20, 30}
+{20, 90, 70, 30}
+==============================
+{70, 40, 10, 50, 20, 90, 30}
+{40, 10, 50}
+{20, 30}
+{20, 90, 70, 30}
+
+=======================================================
+1. nested set
+2. mathametcal basic operations
+3. membership operators
+4. set comprahension
+
+
+Assignment
+-----------------
+1. program for print comman elements from given list ?
+2. program for print different values from list?
+3. program for print all elements from givin set according to acscending order and descending order?
+4. program for to print sum of given ser elements?
+===============================================================
+
+
+
+
+
+
