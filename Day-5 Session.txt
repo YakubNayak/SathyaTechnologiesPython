@@ -1,0 +1,100 @@
+Development of python application is 2 Mode
+-----------------------------------------
+1. Interactive Mode:
+It means command line or shell
+In command line we can write single line statement and that  python statement immediately 
+execute and give the result.
+
+disadvantages
+-----------------
+1. we can't write multi lines of statements
+2. we can't develop GUI Application
+
+2).Batch Mode(GUI):
+-------------------
+--> by using batch mode we can write multilines of code and also we can dev window application
+and web based application..etc.
+
+python Python Editors
+---------------------
+--> to edit the pythin code then we required python editors
+
+1. Document Type editors
+--------------------------
+--> note pad
+--> notepad++
+---> edit +
+
+
+2. IDLE (GUI)
+--------------
+integrated dev environment
+---------
+
+--> to write code 
+--> to compile python statemets
+--> to debug code
+--> print out put 
+--------------------------- 
+
+1. pycharm
+2. IDLE (python)
+3. erics
+4. atom
+5.anaconda
+6. netbeans
+7. ecllipse
+8. visual studio
+9.spyder
+10.jypyter
+
+++++++++++++++++++++++++++++++++++
+first program by using note pad editors
+=========================================
+
+# add of two number program
+num1=20
+num2=700
+add=num1+num2
+print("The add of two numbers=",add)
+
+
+after writing code in notepad we have save file with filename.py or pyw extension
+
+after saving then open into command line argument
+
+
+
+
+
+output
+------
+C:\Users\user\Desktop\PythonPrograms>python Addition.py
+  File "Addition.py", line 5
+    print("The add of two numbers="add)
+                                     ^
+SyntaxError: invalid syntax
+
+C:\Users\user\Desktop\PythonPrograms>python Addition.py
+The add of two numbers= 720
+
+C:\Users\user\Desktop\PythonPrograms>
+
+
+C:\Users\user\Desktop\PythonPrograms>Addition.py
+The add of two numbers= 720
+
+C:\Users\user\Desktop\PythonPrograms>py Addition.py
+The add of two numbers= 720
+
+C:\Users\user\Desktop\PythonPrograms>python Addition.py
+The add of two numbers= 720
+
+C:\Users\user\Desktop\PythonPrograms>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+how to download pycharm idle
+-----------------------------
+
+https://www.jetbrains.com/pycharm/download/#section=windows
+
+
