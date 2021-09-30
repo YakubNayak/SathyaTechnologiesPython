@@ -1,0 +1,237 @@
+3. comment lines in python
+---------------------------
+Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.
+
+In Python, we use the hash (#) symbol to start writing a comment.
+
+Multi-line comments
+These triple quotes are generally used for multi-line strings. But they can be used as a multi-line comment as well. 
+
+
+
+
+ex:
+
+#program for addition of two number
+""" program
+for
+addition
+of
+two number"""
+
+''' program
+for
+addition
+of
+two number'''
+
+x=30 # here x is variable and 30 is a value
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Constants
+	A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+
+
+DATA
+    e = 2.718281828459045
+    inf = inf
+    nan = nan
+    pi = 3.141592653589793
+    tau = 6.283185307179586
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Literals
+Literal is a raw data given in a variable or constant. In Python, there are various types of literals they are as follows:
+
+
+
+rollno=90    number constant
+
+name='naveeen'   string literal
+
+----------------------------------
+raw-data              meta data
+-----                -----------
+10                  	rollno=10
+A                       grade='A'
+110.00                  fee=110.00
+Yakub                   name='Yakub'
+
+--------------------------------------------
+
+1. numaric literals
+-----------------------
+--> numaric literals indicates for --> by integer,  by using float point values , by using complex number
+
+1.by integer
+---------------
+4 ways
+------
+a) by using binary numbers : (01)2 ---> 0b10101    , 0B10101 ----> 
+ex:
+---
+>>> b=0b10101
+>>> type(b)
+<class 'int'>
+>>> print(b)
+21
+>>> b2=0B11100011
+>>> type(b2)
+<class 'int'>
+>>> print(b2)
+227
+>>> 
+_____________________________________________
+b) by using decimal number (0-9) base is 10 ---> ex : 10 ,400, 690, 200000,....etc
+
+ex:
+
+>>> rollno=90
+>>> type(rollno)
+<class 'int'>
+>>> print(rollno)
+90
+>>> acc_no=1234567890
+>>> type(acc_no)
+<class 'int'>
+>>> print(acc_no)
+1234567890
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++
+c) by using octal number system  : (0-7)---> 0,1,2,3,4,5,6,7  base is 8 
+
+to reprasent in pythin 
+
+a=0o123
+b=0O5673
+c=0O8654   # not octal number
+
+>>> a=0o1234
+>>> type(a)
+<class 'int'>
+>>> print(a)
+668
+>>> b=0O654
+>>> type(b)
+<class 'int'>
+>>> print(b)
+428
+>>> c=0o128
+SyntaxError: invalid syntax
+
++++++++++++++++++++++++++++++++++
+d) hexa decimal number system:
+
+0-9 and A,B,C,D,E,F  the base is 16
+
+h=0x124
+h2=0XFCAE
+h3=0XBABA
+
+ex:
+---
+>>> h1=0x1234
+>>> type(h1)
+<class 'int'>
+>>> print(h1)
+4660
+>>> h2=0XFACE
+>>> type(h2)
+<class 'int'>
+>>> print(h2)
+64206
+
++++++++++++++++++++++++++++++++++++++++++++
+2. by using float point values
+-------------------------------
+wallet=0.0
+acc_balnace=0.0
+
+
+rate=120.00   float literal
+salary=90000.876     float literal
+
+price=99.00
+ex:
+===
+>>> price=99.00
+>>> type(price)
+<class 'float'>
+>>> 
+
+++++++++++++++++++++++++++++++
+3. complex values
+---------------------
+com=10+20j
+
+ex:
+---
+>>> com=30+20j
+>>> type(com)
+<class 'complex'>
+>>> print(com)
+(30+20j)
+>>> 
+
+
+++++++++++++++++++++++++++++++++++++
+2. string litarals
+-------------------
+--> string is sequence of characters
+--> string is group of characters
+--> in python string can reprasent betweeen double quote and single quote.
+
+
+
+ex:
+ name='priya'   string literal
+
+bank_name="HDFC"   string literal
+
+grade='A'      string literal
+ 
+
+Ex:
+----
+>>> name='priya'
+>>> type(name)
+<class 'str'>
+>>> print(name)
+priya
+>>> grade='A'
+>>> type(grade)
+<class 'str'>
+>>> print(grade)
+A
+>>> 
++++++++++++++++++++++++++++++
+3. boolean literals
+---------------------
+--> Ture and False ----> these are value type keywords
+
+True --1     --> bool literals  
+False--- 0    --> bool literals 
+
+ex:
+----
+>>> t=True+1
+>>> print(t)
+2
+>>> f=False+10
+>>> print(f)
+10
+>>> type(t)
+<class 'int'>
+>>> t2=True
+>>> type(t2)
+<class 'bool'>
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
