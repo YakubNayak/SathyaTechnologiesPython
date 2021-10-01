@@ -1,0 +1,165 @@
+Variables in python
+====================
+
+Vary + able
+Vary means change and able means ability to change the value
+--> A variable is a name of memory location used to store data in the memory.
+--> Once value assign in a variable that value is  not constant it will change number of times according to user requirement. 
+--> the use variables are to supply values to the program.
+
+
+II. Declaration of variables
+----------------------------
+
+syntax:
+--------
+
+a). var=value
+
+ex:
+---
+hotel_name='TajBanjara'
+road_no=143
+
+
+b) multiple variables and multiple values
+
+Syntax:
+-------
+var1,var2,var3=val1,val2,val3
+
+ex:
+
+x,y,z=100,200,300
+
+>>> x,y,z=100,200,300
+>>> print(x)
+100
+>>> print(z)
+300
+>>> print(x,y,z)
+100 200 300
+>>> 
+
+++++++++++++++++++++++++++++++++
+c). multiple variables with single value
+---------------------------------
+syntax:
+-------
+ var1=var2=var3=value
+
+ex:
+
+>>> a=b=c=2000
+>>> print(a)
+2000
+>>> print(b)
+2000
+>>> print(c)
+2000
+>>> print(a,b,c)
+2000 2000 2000
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++
+Types of varibales in python
+----------------------------------
+python can support 6 types variables
+-------------------------------------
+1. local variable
+2. global variable
+3. non- local variable
+
+
+4. intence varibale
+5. reference variable
+6 static variable
+
+++++++++++++++++++++++++++++++
+1. local variable
+-------------------
+--> which variable declare with in the function that variable known as local varibale. and the scope of local 
+variable is with in the function only.
+
+Ex:
+----
+def myfunction():
+    road_no=163    #Local Variable
+    print("My Raod_no=",road_no)
+    
+myfunction()
+print("My Raod_no=",road_no)
+
+
+Output
+-----
+My Raod_no= 163
+
+NameError: name 'road_no' is not defined   # out of scope 
+==================================================================
+
+2. global variable
+==================
+
+--> which variable declare out side thee function that variable known as global varibale. and the scope of global
+variable is with in the function and out side the function also.
+
+
+ex:
+--
+hotel_name='TajBanjara'      # global variable   
+def myfunction():
+    road_no=163    #Local Variable
+    print("My Raod_no=",road_no)
+    print("My Hotel Name=",hotel_name)
+myfunction()
+print("My Hotel Name=",hotel_name)
+
+
+output
+---------
+My Raod_no= 163
+My Hotel Name= TajBanjara
+My Hotel Name= TajBanjara
+
+++++++++++++++++++++++++++++++++++++
+
+3. Non-local Variable
+-----------------
+--> which variable declare inside nested  function that variable known as non-local varibale. and the scope of non-local
+variable is with in the nested fucntion.
+
+
+ex:
+---
+z=90 # global variable 
+def f1():
+    y=90    # Local vraibale
+    def f2():    # nested function 
+        x=50     # non-local variable
+        print("My x value=",x)
+    f2()
+    print("My x value=",x)
+f1()
+
+        
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+4. instence varibale
+5. reference variable
+6 . static variable
+
+Advanced python 
+Class and Object
+++++++++++++++++++++++++++++++++++++==
+
+
+
+
+
+
+
+
+
+
+
