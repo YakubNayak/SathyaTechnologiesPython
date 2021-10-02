@@ -1,0 +1,189 @@
+Python Basic function
+--------------------------------
+1. type()
+2. id()
+3. print()
+4 input()
+----------------------------
+1. type()
+--> the use type() function is to know data type of given varibale value.
+
+ex:
+---
+
+int var=80;     #static types declaration
+
+
+rollno=80
+
+fee=9000.99
+
+
+--> in python prgraming when run your variable based on variable balue PVM can deside.
+--> python is dynamic programing language.
+
+
+ex:
+----
+>>> rollno=90
+>>> type(rollno)
+<class 'int'>
+>>> rate=120.00
+>>> type(rate)
+<class 'float'>
+>>> name='Raji'
+>>> type(name)
+<class 'str'>
+>>> t=True
+>>> type(t)
+<class 'bool'>
+>>> 
++++++++++++++++++++++++++++++++++++
+2. id()
+------
+
+--> the use of id() function is to know value adddress in heap area or dynamic memory .
+
+ex:
+---
+
+>>> rollno=90
+>>> type(rollno)
+<class 'int'>
+>>> rate=120.00
+>>> type(rate)
+<class 'float'>
+>>> name='Raji'
+>>> type(name)
+<class 'str'>
+>>> t=True
+>>> type(t)
+<class 'bool'>
+>>> id(rollno)
+140736163340096
+>>> print(id(name))
+2534150180512
+>>> id(rate)
+2534109002800
+>>> x=90
+>>> y=90
+>>> id(x)
+140736163340096
+>>> id(y)
+140736163340096
+>>> 
++++++++++++++++++++++++++++++++++++++++++++++
+
+3. print():
+----------
+
+--> the use of print() function is to print text or value on console window.
+
+
+1st way
+--------
+
+print("welcome to python world")
+
+
+2nd way
+----------
+
+food="Biryani"
+
+print(food)
+
+
+3rd way
+-------
+
+food="Biryani"
+
+print("My food item is=",food)
+
+
+My food item is=Biryani
+
+
+
+4th way
+-----------
+Sometimes we would like to format our output to make it look attractive. This can be done by using the
+str.format() method. This method is visible to any string object.
+
+ex:
+===
+>>> print("My x value={},My Y value={}".format(x,y))
+My x value=120,My Y value=230
+>>> print('I love {0} and {1}'.format('python','biryani'))
+I love python and biryani
+>>> print('I love {1} and {0}'.format('python','biryani'))
+I love biryani and python
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4. input()
+------------
+--> 
+
+num1=20
+num2=60
+add=num1+num2
+print("The addition of two numbers=",add)
+
+
+--> Up until now, our programs were static. The value of variables was defined or hard coded into the source code.
+--> To allow flexibility, we might want to take the input from the user.
+-->  In Python, we have the input() function to allow this.
+
+
+
+The use input() function is to read input values from keyboard at run time.
+
+
+
+input():
+------
+
+th python input() function can take from keyboard string input only.
+
+ex:
+----
+
+num1=input("Enter num1 value:")
+num2=input("Enter num2 value:")
+add=num1+num2
+print("The addition of two numbers=",add)
+
+
+
+
+output
+-------
+
+Enter num1 value:50
+Enter num2 value:200
+The addition of two numbers= 50200
+>>> x=input("Enter x value")
+Enter x value120
+>>> type(x)
+<class 'str'>
+>>> x+90
+
+TypeError: can only concatenate str (not "int") to str
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Type casting or type conversion
+--------------------------------------
+--> all string type we are converting into any other types
+type conversion
+
+
+
+
+
+
+			
+
+
+intput-----> str--->   int,float,complex,bool
