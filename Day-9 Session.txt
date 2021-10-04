@@ -1,0 +1,292 @@
+Python Data Types
+-----------------
+--> Data type describe type of data are you going to hold in variable 
+--> Here data is nothing but a value like number, decimal number, character and string.
+--> To hold this values python provide dynamic data types as follows.
+
+python has a 2 types of data type
+---------------------------------
+
+Fundamental Type of data type (primitive data types)
+Collection type of data type  (Non-primitive data types)
+
+
+
+1.Fundamental Type of data type
+-----------------------------------
+--> Suppose a variable can hold a single value such kind of variable is known as fundamental type of data type.
+
+These are following types
+=======================
+
+1. int
+2. float
+3. complex
+4. string
+5. bool
+
+
+1. int
+-------
+
+10, 50, 7000.....etc
+--> the data type can hold pure numbers like 10, 50, 7000.....etc
+
+4ways
+------
+a) by binary value 
+b) by using decimal values
+c) by using octal number 
+d) by using hexa decimal number
+
+
+ex:
+---
+
+>>> rollno=100
+>>> type(rollno)
+<class 'int'>
+>>> b=0B10101
+>>> print(b)
+21
+>>> t=0O12345
+>>> type(t)
+<class 'int'>
+>>> print(t)
+5349
+>>> h=0x123AB
+>>> type(h)
+<class 'int'>
+>>> print(h)
+74667
+>>> 
+
+++++++++++++++++++++++++++++++
+
+2. float
+
+--> the use float data type is to hold fractional values like 12.25,90000.99 ...etc
+
+ex:
+
+>>> salary=80000.75
+>>> type(salary)
+<class 'float'>
+>>> print(salary)
+80000.75
+
+++++++++++++++++++++++++++++++++++++++++++
+3. complex
+----------------
+
+--> the use of complex data type tp hold complex values like 10+20j, 200+50j....etc
+
+ex:
+---
+>>> com=20+40j
+>>> type(com)
+<class 'complex'>
+>>> print(com)
+(20+40j)
+>>> 
+
++++++++++++++++++++++++++++++++
+4 string
+------------
+--> group of characters is known as string
+
+ex:
+---
+hotel_name="Taj banjara"
+
+bank_name='SBI'
+
+
+>>> bank_name='SBI'
+>>> type(bank_name)
+<class 'str'>
+>>> print(bank_name)
+SBI
+>>> 
+
+++++++++++++++++++++++++++++++++++++
+>>> py='python is easy'
+>>> python=""" python is a easy
+programing language"""
+>>> python=''' python is a easy
+programing languag'''
+>>> type(python)
+<class 'str'>
+>>> 
+
++++++++++++++++++++++++++++++++++++++
+5. bool
+
+--> the bool can reprasent with values True/False
+
+ex:
+--
+
+>>> t=True
+>>> type(t)
+<class 'bool'>
+>>> f=False
+>>> type(f)
+<class 'bool'>
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+
+2. Collection Data types
+-------------------------
+
+--> Suppose if we want to represent more than one value with in a single variable then go with collection type of variable
+Using collection type we can represent  an ordered sequence of items (values).
+
+--> List
+--> tuple
+---> set
+---> dictinaries
+--> range()
+--> str 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Type converstion
+------------------------
+
+
+The process of converting the value of one data type (integer, string, float, etc.) to another data type is called type conversion.
+
+
+ Python has two types of type conversion.
+1. Implicit Type Conversion
+
+2.Explicit Type Conversion
+
+
+
+1. Implicit Type Conversion
+----------------------------
+--> In Implicit type conversion, Python automatically converts one data type to another data type. This process doesn't need any user involvement
+
+
+
+>>> x=90
+>>> y=45.99
+>>> print(x+y)
+135.99
+>>> type(x)
+<class 'int'>
+>>> type(y)
+<class 'float'>
+>>> add=x+y
+>>> type(add)
+<class 'float'>
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++
+Explicit Type Conversion
+---------------------
+
+In Explicit Type Conversion, users convert the data type of an object to required data type. We use the predefined functions like int(), float(), str(), complex(),and bool() etc to perform explicit type conversion.
+
+This type of conversion is also called typecasting because the user casts (changes) the data type of the objects.
+But in python All the string input data type convert into any other type
+
+
+---------------------------------------
+1. int()
+-------
+--> the use int() function is to convert string int value into pure integer number.
+
+
+ex:
+---
+>>> num=int(input("enter num value:"))
+enter num value:900
+>>> type(num)
+<class 'int'>
+>>> road_no=int(input("Enter road_no:"))
+Enter road_no:146
+>>> type(road_no)
+<class 'int'>
+>>> print(road_no)
+146
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++
+2. float()
+
+---> the use float() function is to convert string float value into pure floating point  number.
+
+ex:
+---
+>>> salary=float(input("Enter your salary:"))
+Enter your salary:30000.99
+>>> type(salary)
+<class 'float'>
+>>> print("my salary =",salary)
+my salary = 30000.99
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++=
+3. complex()
+------------
+---> the use complex() function is to convert string complex value into pure complex  number.
+
+ex:
+
+>>> com=complex(input("enter com value:"))
+enter com value:20+30j
+>>> type(com)
+<class 'complex'>
+>>> print(com)
+(20+30j)
+>>> 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4. bool()
+----------
+---> the use bool() function is to convert string boolean value into pure boolean value.
+
+ex:
+----
+
+>>> b=bool(input("enter b value"))
+enter b valueFalse
+>>> type(b)
+<class 'bool'>
+>>> print(bool)
+<class 'bool'>
+>>> print(b)
+True
+>>> b2=bool(input("enter b value"))
+enter b valueTrue
+>>> print(b2)
+True
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+
+Logical condition
+-----------------
+
+A    B     a or b
+
+0     0       0
+0     1       1
+1     0       1
+1     1       1
+
++++++++++++++++++++++++++++++++++++++++++++
+Note:
+-----
+--> Type Conversion is the conversion of object from one data type to another data type.
+--> Implicit Type Conversion is automatically performed by the Python interpreter (PVM).
+--> Python avoids the loss of data in Implicit Type Conversion.
+--> Explicit Type Conversion is also called Type Casting, the data types of objects are converted using predefined functions by the user.
+--> In Type Casting, loss of data may occur as we enforce the object to a specific data type.
+
+
+
+
+
