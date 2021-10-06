@@ -1,0 +1,491 @@
+Assignment1:
+---------------
+
+rollno=int(input("Enter rollno:"))
+name=input("Enter Your Name:")
+fee=float(input("Enter Fee value:"))
+address=input("Enter Your Address:")
+print("My rollno is=",rollno)
+print("My name is=",name)
+print("My fee is=",fee)
+print("My Address=",address)
+
+output
+======
+Enter rollno:101
+Enter Your Name:Anjali
+Enter Fee value:7500.00
+Enter Your Address:Ananthapur
+My rollno is= 101
+My name is= Anjali
+My fee is= 7500.0
+My Address= Ananthapur
++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++
+Python Operators
+--------------------
+--> Operator is a symbol
+ex:
+
+5+3
+
+5, 3 are operands 
++  operator
+
+--> the combination of operands and operator is known as operations
+
+
+
+
+in python operators are following types
+--------------------------------------------
+1. Arthametic operators
+2. Relational Operators
+3. Logical Operators
+4. Bitwise Operator
+5. Assignment operators
+6 Special operators
+	i) identity operator
+	ii) membership operator
+
+=========================
+1. arthametic operators
+------------------------
+--> The use arthametic operators are to perform mathametical 
+operations such as addition , subtraction ,multiplication..etc.
+
+
+ex:
+----
+
+num1=10
+
+num2=5
+
+operators 		Evaluation        Result
+----------		----------	-----------
+
++ Addition		num1+num2        10+5= 15
+- subtraction		num1-num2        10-5= 5
+* multiplication        num1*num2         10*5=50
+/ division              num1/num2	10/5= 2.0
+%  modulo     		num1%num2 	10%5=0
+// floor division       num1//num2	10//5=2
+** Exponent  		num1**num2	10pow5=100000
+-------------------------------------------------------
+
+
+
+Eg:
+---
+# program for arthametic operators
+num1=int(input("Enter num1 value:"))
+num2=int(input("Enter num2 value:"))
+print(" Addition of num1,num2=",num1+num2)
+print(" subtraction of num1,num2=",num1-num2)
+print(" Multiplication of num1,num2=",num1*num2)
+print(" Division of num1,num2=",num1/num2)
+print(" Modulo of num1,num2=",num1%num2)
+print(" Floor Division of num1,num2=",num1//num2)
+print(" Exponent of num1,num2=",num1**num2)
+++++++++++++++++++++++++++++++++++++++++++++++++
+Assignment questions
+=======================
+
+1. program for addition of 2 numbers?
+2. program for fined area of circle?  
+3. program for fined area of rectangle?
+4. program for fined avearage of 3 numbers?
+5. program for to convert fohrenheat to celsious?  
+6. program for simple interest.?  
+
+
+price=float(input("Enter your initial price(Amount):"))
+time=int(input("Enter Your time value:"))
+rate=float(input("Enter rate value:"))
+si=(price*time*rate)/100
+print("My simple Interest is=",si)
+print("Total Amount")
+total=price+si
+print("Total Amount=",total)
+
+
+output
+===========
+Enter your initial price(Amount):5000.00
+Enter Your time value:24
+Enter rate value:2.00
+My simple Interest is= 2400.0
+Total Amount
+Total Amount= 7400.0
+-----------------------------------
+
+
+
+
+=======================
+2. Relational Operators
+-----------------------
+--> The use relational operator is to compare two operands
+and it can return either true/false value.
+
+ex:
+---
+EX:
+---
+num1=5
+num2=3
+ 
+
+operators 		Evuluation 		Result
+--------		----------		-------
+<    			num1<num2   		--> 5<3			--False    		
+>    			num1>num2		-->5>3			--> True 			
+<=   			num1<=num2		--> 5<=3		--> False    		
+>=   			num1>=num2 		---> 5>=3  		--> True   		
+!=   			num1!=num2   		---> 5!=3 		--> True             
+==   			num1==num2          	-->5==3 		-->False		
+---------------------------------------------
+
+num1=10   --> value will be change
+
+num1==10  --> value never change
+
+EX:
+---
+print("Example program for Relational Opertor")
+n1=int(input("Enter n1 value:"))
+n2=int(input("Enter n2 value:"))
+print("n1<n2=",n1<n2)
+print("n1>n2=",n1>n2)
+print("n1<=n2=",n1<=n2)
+print("n1>=n2=",n1>=n2)
+print("n1!=n2=",n1!=n2)
+print("n1==n2=",n1==n2)
+
+=================================
+3. Logical Operator
+---------------------------------
+and    		Logical AND   
+or		Logical OR	
+not		LOgical NOT   
+
+
+--> The use of logical operators are to check more than one 
+condition and it can return either true or false values.
+
+--> The logical operators works based on Logic Gates
+i.e AND, OR, NOT.
+
+
+AND Gate
+--------------
+x   y    x and y
+--------------
+0   0	0		
+0   1	0
+1   0	0	
+1   1	1
+==============
+multiplication (*)
+---------------------
+
+OR Gate
+--------------
+x   y    x or y
+--------------
+0   0	0		
+0   1	1
+1   0	1	
+1   1	1
+===========
++ operator"
+
+
+not gate
+-------------
+0    1
+1    0
+
+-------------------
+EX:
+
+x=True
+y=True
+z=False
+print('x and y==',x and y)
+print('x or y==',x or y)
+print('x and z==',x and z)
+print('x or z ==',x or z)
+print('not x',not x)
+print('not z',not z)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-----------------------------
+Bitwise Operators
+-----------------------------
+--> The use bitwise operator is to perform opearation at binary level (0-1)
+--> the given variable value must convert into binary number system 
+and do operation based on Logic gates ( AND,OR and NOT) 
+and finally the result is decimal number.
+
+
+1. Binary (01) 2
+2. decimal number system
+--> the number consist with 0-9 (0,1,2,3,4,5,6,7,8,9) base is 10
+3. octal number system
+--> the number consist with 0-7( 0,1,2,3,4,5,6,7) the base is 8
+4. hexadecimal number
+--> the numbers consist with (0-15) (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F) base is 16
+
+
+EX:
+----
+---------------------------------------------------
+
+x=10   (1010)2
+y=5   (0101)2
+
+
+Operators 		Evaluation		Result
+----------		----------		-------
+& 	(Bitwise AND)	x&y --> 10&5--> 1010&0101---> 0	
+| 	(bitwise OR)	x|y --> 10|5--> 1010|0101---> 15
+^  	(Bitwise XOR)	x^y --> 10^5--> 1010&0101---> 15
+~   	(Bitwise Not)   ~x  ---> ~1010 -->        --> -101
+<< 	(left shift)	x<<y  	10<<5   --> 10*2pow 5  ---> 10*32===> 320
+>> 	(Right Shift)	x>>y  ---> 10/32		--> 0
+
+===============================================
+======================
+EX:
+x=10
+y=5
+print("x & y==",x & y)
+print('x | y==',x | y)
+print('x ^ y==',x ^ y)
+print('x << y ==',x << y)
+print('x >> y ==',x >> y)
+print('~x====',~x)
+print("END")
+#Note: Bitwise operators not use for floating point values
+===========================================================
+5. Assignment Operators
+------------------------
+--> We can use assignment opeartor to assign value to the existing 
+variable value.
+
+--> The assignment operators form with combination of 
+arthametic and bitwise operators.
+
+ex:
+-----
+n=100
+200
+
+n+=200
+
+---> n=n+200
+--> n=100+200
+print(n)
+300
+--------------------------
+n=100
+n-=50
+
+--> n=n-50
+--> n=100-50
+print(n)
+50
+
+
+
+
+
+n=10   <----- 5 
+
+
+Operators 		Evaluation		Result
+--------		--------		-------
++=			n+=5 --> n=n+5--> n=10+5  --> 15
+-=			n-=5 --> n=n-5 --> n=10-5 --> 5
+*=			n*=5 --> n=n*5 --> n=10*5 --> 50
+/=  			n/=5 ---> n=n/5 --> n=10/5 --> 2.0
+%=                      n%=5 --> n=n%5 ---> n=10%5 --> 0
+//= Floor    		n//=5 ---> n=n//5 --> n=10//5 -->2
+**=			n**=5 --> n=n**5  --> n=10pow5 --> 100000
+&=			n&=5   --> n=n&5   --> n=1010&0101--> 0
+|=
+^=
+<<=
+>>=
+
+-----------------------
+x=100
+x+=500
+print('x===',x)
+
+eg
+---
+n=10
+# now adding 5 value in existing n value
+print("Before n value=",n)
+n|=5
+print("After assignment n value=",n)
+
+
+--------------------
+6. Special Operators
+--------------------
+these are 2 types
+
+1. identity operators  (address) is   , is not
+2. member ship operator 
+
+1. identity operator
+--------------------
+--> The use identity operator is to campare given variable value address
+after comparision it can return either True or False value.
+-->
+operators         Evaluation
+----------	---------------
+is 	       it is True when morethan one variable address is 
+		identically same. 
+
+is not 		it is True when morethan one variable address 
+		identically not in same. 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Eg
+===
+>>> x=30
+>>> id(x)
+140735393617856
+>>> y=90
+>>> id(y)
+140735393619776
+>>> z=30
+>>> id(z)
+140735393617856
+>>> x=y=30
+>>> x is z
+True
+>>> x is y
+True
+>>> x is not y
+False
+>>> x is not z
+False
+>>> n=90
+>>> x=90
+>>> 
+++++++++++++++++++++++++++
+2. membership operators
+-----------------------
+--> The use of membership operator is to fined the value or string 
+into the given sequence (string,list,set,tuple and range).
+
+--> the memeber ship operator can return either True/ False value
+
+
+eg:
+---
+operators  	 Evualuation
+---------	--------------
+in		It is True if the given value/string is avaialable to the 
+		sequence.
+
+not in	  	It is True if the given value/string is not avaialable to the 
+		sequence.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>>> name='python'
+>>> print('p' in name)
+True
+>>> print('a' in name)
+False
+>>> print('a' not in name)
+True
+>>> 
++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+x=10   decimal
+
+
+binary format
+
+
+2|10
+2|5---0
+2|2----1
+2|1--0
+
+1010
++++++++++++++++++++++++++++++++++++++++++++++
+control statements
+------------------------
+--> control statements is statements which is execute our program in non sequence order
+this kind stmt is knows control statements or decsion making statemet.
+
+1. sequence control statement
+2. conditional/ selectional control statement
+
+->   if
+--> if-else
+--> nested if
+--> if-elif -else
+--> while
+---> for
+---> nested for
+
+---> break
+--> continue
+--> pass
+--> else suite
+
+
+3. looping/iteration/repeation control
+--------------------------------------------
+--> while
+---> for
+---> nested for
+break
+continue
+pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+ 
+
