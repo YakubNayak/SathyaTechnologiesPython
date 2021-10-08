@@ -1,0 +1,285 @@
+++++++++++++++++++++
+Control statement
+------------------
+--> COntrol statement is statement which is used to 
+execute the program in non sequence order such kind of 
+statement is known as control statement(or)Decision making statement.
+
+--> every time control statements are can return either True/False.
+++++++++++++++++++++++++++++++++++++++++++++++++++
+1.if 
+2. if -else
+3. if-elif -else  (if else ladder)
+netsed if control
+4. while 
+5. for
+.nested for 
+6. else suite
+7. break
+8. continue
+9. pass
+++++++++++++++++++++++++++++++++++++++++
+1. sequence control statement
+--------------------------------
+--> which program can execute in sequence oreder or step by step step 
+that statement is known as sequence control statement
+Eg
+--
+
+n1=int(input("enter n1 value:"))
+n2=int(input("enter n2 value:"))
+result=n1+n2
+print("Add two number=",result)
+++++++++++++++++++++++++++++++++++++++++++
+2. conditional / selectional control statement
+====================================================
+1. if
+2. if-else
+3. if -elif-else
+4. nesetd if 
+--------------------------------------------------
+3. looping/ iteration/repeatation control statement
+-------------------------------------------------------
+4. while
+5. for
+-> nested for
+-----------------------------------------------------
+4. breaking control statement
+-----------------------------------------------------
+6. break
+7. continue
+8. pass
+9. else-suite
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. if 
+-----
+flow chart
+-----------
+--> in if control statement here if first check the condition
+in case given condition is true it can print true statement.
+if condition is false won't print statement.
+
+
+syntax:
+--------
+
+if <condition>:
+	stmt1
+	stmt2
+
+here colon(:) indicate condition body starting point
+after colon next statement will start with at least one TAB space
+here TAB space is known as indention 
+
+Eg:
+----
+write a python program to print 10 in words(TEN)?
+
+n=int(input("Enter n value:"))
+if n==10:
+    print('TEN')
+
++++++++++++++++++++++++++++++++++++
+2. python program for print even number?
+
+n=int(input("Enter n value:"))
+if n%2==0:
+    print(' n is Even number ')
+
+==============================================
+2. if-else
+-----------
+--> in if else control statement if can check condition. if condition is 
+True it can print true statement, in case the given condition is flase
+tale else and print false statement.
+
+syntax:
+--------
+if condition:
+	stmt1
+else:
+	stmt2
+----------------------------------------
+eg:
+----
+1. write a python to print biggest of two nubers?
+2. python program for to print given number even or odd?
+3. ptthon program for to print given number +ve or -ve?
+4. python program for to print given person valid for vote or not?
+5. python program Login page?
+
+
+
+
+    
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3. if-elif-else
+====================
+--> the if-elif control statement con check condition in sequence order
+if condition is true print statement come out condition. in case the all 
+conditions are false. print false statement.
+
+syntax:
+------------
+
+if condition-1:
+	stmt1
+elif condition-2:
+	stmt2
+elif condition-3:
+	stmt3
+elif condition-4:
+	stmt4
+else:
+	stmt5
+------------------------------------
+1. python program to print biggest of 3 numbers?
+
+2. python program for to print students grades based avearage of student marks?
+if >=70    A Grade
+if 60 --> <70    B grade
+if 50  --<60    C grade   
+fail
+++++++++++++++++++++++++++++++++++++++++++++
+3.python program for to print electricity Bill?
+
+consumer_id
+name:
+current_reading
+previous_reading 
+unit
+
+unit>200    --> 1.75
+units 200 --< 350  --> 3.75
+units >=350   --> 5.25
+
+total_amout
+
+
+4. write a python program for login page code?
+
+
+conditions:
+-----------
+
+
+
+================================
+
+--------------------------------------------
+# python program for to print students grades based
+# avearage of student marks?
+
+sid
+sname
+sfee
+sub1
+sub2
+sub3
+total
+avg
+
+avg morethan 70% ----> A grade
+
+avg morethan 60%  and lessthan 70 ----> B grade
+
+avg morethan 50%  and lessthan 60 ----> C grade
+
+avg lessthan 50 ----> Fail
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+4. python program for Employee invoice?
+=======================================
+emp_id
+emp_name
+emp_bsal
+ta
+da
+hra
+lic
+pf
+
+grasssal
+netsal
+---------------------------------------------------
+
+if emp_bsal<20000:      Ta	da	hra	pf	lic
+			4.25%    5.75%   7.755   12.00%   11.25%
+if emp_sal>=20000
+and <30000:		14.25%    15.75%   7.755   12.00%   13.25%
+
+if emp_sal>=30000	24.25%    15.75%   17.755   12.00%   11.25%
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+4. nested if control statement
+============================
+--> Some time write if condition inside another if condition This is called nested if statement.
+
+Syntax:
+---------
+if <condition>:
+	if <condition>:
+		stmt1
+	stmt2
+
+
+++++++++++++++++++++++++++++++++++++++++
+
+num = int(input("Enter a number: "))
+if num >=0:
+    
+    if num==0:
+        print("Zero")
+    print("number is positive")
+
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+nested if-else
+++++++++++++++++++
+num = int(input("Enter a number: "))
+if num>=0:
+    if num==0:
+        print("Zero")
+    else:
+        print("NOt Zero")
+    print("number is positive")
+else:
+    print("Number is Negative")
+
+
+output
+------------
+Enter a number: -1
+Number is Negative
+>>> 
+================== RESTART: D:/Python Personal/nestedif.py ==================
+Enter a number: 10
+NOt Zero
+number is positive
+
++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
