@@ -1,0 +1,148 @@
+
+================================
+3. Iterative/Looping control stmt
+----------------------------------
+-->  the use of looping control statement is 
+to execute same statemet sevaral times if number of iteration 
+is fixed.
+
+--> while
+--> for
+--> neted for
+
+
+1. while
+--------
+--> the use of while control stmt is to execute same stmt
+number of times if number of iterartion is fixed.
+
+syntax:
+------
+Synatx:
+---------
+while condition:
+        stmt
+        incr/decr
+
+
+============================
+1. program for to print numbers from 1 to 10?
+
+2. progrqm to print even numbers between from 100 to 200?
+
+3. program for to print multiplication tables?
+
+4. program for to odd numbers form 1 to 100?
+
+5. program for to print numbers from 10 to 1?
+
+6. write a python program for to check given is number polindrom or not? 
+
+121  =121 madam=madam
+
+7. write a python program for sum of given number? n=123--> 1+2+3=6
+
+8.Python program to check if the number is an Armstrong number or not?
+
+(153,371,407, 1634....etc)
+
+153=1*1*1+5*5*5+3*3*3=153
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# take input from the user
+num = int(input("Enter a number: "))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+====================================================
+----------------------------------
+# program for print no from 1 to 10
+n=1
+while n<=10:
+    print(n,end=" ")
+    n=n+1
+
+===================================
+2. for:
+----------
+--> for also execute same statement sevaral times if the number of
+iteration is fixed.
+
+
+syntax:
+-------
+
+for variable in sequence:      (range/string/list/tuple/set/dict)
+	stmt1
+	stmt2
+  	stmt3
+
+eg:
+----
+for i in range(1,11):
+	print(i)
+
+
+1. range():
+--> the use of range function is to print sequece of numbers in list object.
+
+
+
+>>> range(0,10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> range(1,11)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> range(5,45,5)
+[5, 10, 15, 20, 25, 30, 35, 40]
+>>> range(10,0,-1)
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> range(45,5,-5)
+[45, 40, 35, 30, 25, 20, 15, 10]
+>>> range(1)
+[0]
+>>> range(0)
+[]
+>>> range(10,0,-3)
+[10, 7, 4, 1]
+>>> 
+Eg:
+---
+ex:
+
+for i in range(1,11):
+    print(i,end=" ")
+print()
+name='Python'
+for p in name:
+    print(p, end=" ")
+print()
+animal=['cat','rat','lion']
+for a in animal:
+    print(a)
+   
+----------------------------------------
+1. program to print 1 to 10 ?
+2. program for print 10 to 1?
+
+3. program for print multiplication tables?
+
+4. program to print even numbers between 200 to 400?
+
+5. python program for sum of even numbers from (1,100)?
+
+----------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
