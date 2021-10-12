@@ -1,0 +1,358 @@
+1. Introduction
+2. Declaration of string
+3. Accessing String element
+4. String basic operation
+====================================
+Strings
+--------
+--> stirng is sequence of characters.
+---> string is a collection of characters.
+--> in python string can define with in the
+single quote and with in the double.
+
+eg:
+ch='a'   # string object
+ch="a"   # it is also string objcect
+
+name='aaryan'    # string object
+name="Naga Ashok"   # string object
+
+
+NOte: python not support character data type.
+
+--> if you define multiline string then use
+triple double quotes and triple single quote.
+
+
+
+eg:
+====
+
+python="""python is
+very simple programing
+language"""
+
+
+python='''python is
+very simple programing
+language'''
+
+
+Note:
+------
+#  comment line   this is single line comment
+
+
+for multiline comments in python use
+
+"""python is
+very simple programing
+language"""
+
+------------------------
+--> string object is immutable object
+that means once string is declared that value never be change.
+
+--> in string ecah and every character has a unique position that is known as 
+indexing.
+
+
+
+
+--> python can support forward indexing and backward indexing also
++ve indexing 
+-ve indexing also
+
+--> +ve index start with 0 to n-1
+--> -ve index start with -1  to -n value.
+
+
+EX:
+---
+>>> str="Python"
+>>> type(str)
+<class 'str'>
+>>> name='Yakub'
+>>> type(name)
+<class 'str'>
+>>> sms="Python is a simple language"
+>>> type(sms)
+<class 'str'>
+>>> sms='Python is a simple language'
+>>> type(sms)
+<class 'str'>
+>>> grade='A'
+>>> type(grade)
+<class 'str'>
+>>> rank="a"
+>>> type(rank)
+<class 'str'>
+>>> python=""" python is very
+easy programing language"""
+>>> type(python)
+<class 'str'>
+>>> python=''' python is very
+easy programing language'''
+>>> type(python)
+<class 'str'>
+
+++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++
+3. Accessing String Elements
+=================================
+--> string can access in python 3 ways
+1. using indexing
+2. using slicing (Extracting)
+3. using looping control statement.
+++++++++++++++++++++++++++++++++++++++
+1. using indexing 
+eg:
+----
+>>> name='sathyatech'
+>>> print(name[0])
+s
+>>> print(name[6])
+t
+>>> print(name[9])
+h
+>>> print(name[-1])
+h
+>>> print(name[-5])
+a
+>>> print(name[-8])
+t
+>>> 
+=================================
+1. Accessing string elements
+---------------------------
+1. using indexing
+-----------------------
+>>> s='python'
+>>> print(s[0])
+p
+>>> print(s[1])
+y
+>>> print(s[5])
+n
+>>> print(s[-2])
+o
+>>> print(s[-5])
+y
+>>> ======================
+2. using slicing(:) slice operator
+-----------------------------------
+--> the use of slice operator is to extarct the given string
+in different parts:
+
+Syntax:
+-------
+[start:stop:stepsize]
+
+start indicate: starting position of string
+stop indicate: ending position of string
+step size: increment/decrement string position
+
+Eg:
+----
+>>> python='python is very easy'
+>>> print(python[::1])
+python is very easy
+>>> print(python[::2])
+pto svr ay
+>>> print(python[::3])
+ph  rey
+>>> print(python[1:10:2])
+yhni 
+>>> print(python[1:16:3])
+yoivy
+>>> print(python[-1:-15:-2])
+ya rvs 
+>>> print(python[-5:-18:-5])
+  o
+>>> 
+
+>>> str='welcome'
+>>> print(str[::1])
+welcome
+>>> print(str[1:5:2])
+ec
+>>> print(str[0:7:3])
+wce
+>>> print(str[-1:-7:-2])
+eol
+>>> print(str[-1:-8:-2])
+eolw
+>>> 
+
+
+==================================
+3. usong looping control statements
+====================================
+1. while and for 
+
+eg: with for loop
+-------------------
+str="welcome to python"
+l=len(str)
+print(l)
+for i in range(l):
+    print(str[i])
+
+==================
+str="welcome to python"
+l=len(str)
+x=0
+while x<l:
+    print(str[x])
+    x=x+1
+==========================
+str='welcome to python'
+print(str)
+for i in str:
+    print(i)
+print("using while loop")
+s="python is very beautiful"
+l=len(s)
+i=0
+while i<l:
+    print(s[i])
+    i=i+1
+============================================
+
+2. program for to print given string in reverse 
+order using slicing?
+3. program for to print given string in reverse 
+order using slicing with while loop?
+4. program for print given string in reverse order using indexing? 
+with for and with while loop?
+=====================================
+================
+str='welcome to python'
+print("print original string")
+print(str)
+print("String in reverse order")
+for i in str[-1:-18:-1]:
+    print(i)
+------------------------------
+3. program for to print given string in reverse 
+order using slicing with while loop?
+-------------------------------------------------
+
+eg:
+---
+s="Learning Python is very Easy"
+n=len(s)
+i=0
+print("Forword Direction")
+while i<n:
+    print(s[i],end="")
+    i=i+1
+print()
+print("Backword Direction")
+i=-1
+while i>=-n:
+    print(s[i],end="")
+    i=i-1
+================================
+
+
+ 
+Mathametical operator for string
+--------------------------------
+--> +  ( for concatenation)
+---> * (multiplication)for repetaion
+Eg:
+====
+>>> s1='nihari'
+>>> s2='priya'
+>>> print(s1+s2)
+niharipriya
+----------------------------
+>>> s2="Reddy"
+>>> print(s2*5)
+ReddyReddyReddyReddyReddy
+
+EX:
+s1="MahindraSingh"
+s2="Dhoni"
+print(s1+s2)
+
+print("* ----------------")
+print(s2*5)
+
+
+output
+=======
+MahindraSinghDhoni
+* ----------------
+DhoniDhoniDhoniDhoniDhoni
+
+========================
+======================================
+2. check member ship operator in string
+---------------------------------------
+--> in : 
+--> not in
+
+py="Learning Python is very Easy"
+print('Python' in py)   # True
+print('is' not in py)   # False
+print('Cython' in py)    #False
+print('Jython' not in py)  # True
+
+
+---------------------------
+3. comparision function(Relational Operators)
+---------------------------
+
+-> <,>,=,<=,>=  ,==, !=
+----------------------------
+s1=input("Enter s1 value:")
+s2=input("enter s2 value:")
+if s1==s2:
+    print("s1 and s2 both are same")
+elif s1<s2:
+         print("s1 string is less than s2")
+elif s1!=s2:
+         print("Both not same")
+else:
+         print("OK")
+
+
+output
+========
+Enter s1 value:hai
+enter s2 value:hai
+s1 and s2 both are same
+>>> 
+=================== RESTART: D:/Python Personal/strcon.py ===================
+Enter s1 value:Hai
+enter s2 value:hai
+s1 string is less than s2
+>>> 
+=================== RESTART: D:/Python Personal/strcon.py ===================
+Enter s1 value:SriRam
+enter s2 value:JaiRam
+Both not same
+>>> 
+================================
+how to know ASCII value 
+----------------------
+>>> ord('A')
+65
+>>> ord('a')
+97
+>>> ord('h')
+104
+>>> ord('H')
+72
+>>> 
++++++++++++++++++++++++++++
+sms=input(("Enter a string:"))
+for val in sms:
+    print(val,end="   ")
+print()
+for odd in sms[-1::-1]:
+    print(odd)
+
+
