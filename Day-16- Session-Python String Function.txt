@@ -1,0 +1,526 @@
+Mathametical operator for string
+--------------------------------
+--> +  ( for concatenation)
+---> * (multiplication)for repetaion
+Eg:
+====
+>>> s1='nihari'
+>>> s2='priya'
+>>> print(s1+s2)
+niharipriya
+----------------------------
+>>> s2="Reddy"
+>>> print(s2*5)
+ReddyReddyReddyReddyReddy
+
+EX:
+s1="MahindraSingh"
+s2="Dhoni"
+print(s1+s2)
+
+print("* ----------------")
+print(s2*5)
+
+
+output
+=======
+MahindraSinghDhoni
+* ----------------
+DhoniDhoniDhoniDhoniDhoni
+
+========================
+======================================
+2. check member ship operator in string
+---------------------------------------
+--> in : 
+--> not in
+
+py="Learning Python is very Easy"
+print('Python' in py)   # True
+print('is' not in py)   # False
+print('Cython' in py)    #False
+print('Jython' not in py)  # True
+
+
+---------------------------
+3. comparision function(Relational Operators)
+---------------------------
+
+-> <,>,=,<=,>=  ,==, !=
+----------------------------
+s1=input("Enter s1 value:")
+s2=input("enter s2 value:")
+if s1==s2:
+    print("s1 and s2 both are same")
+elif s1<s2:
+         print("s1 string is less than s2")
+elif s1!=s2:
+         print("Both not same")
+else:
+         print("OK")
+
+
+output
+========
+Enter s1 value:hai
+enter s2 value:hai
+s1 and s2 both are same
+>>> 
+=================== RESTART: D:/Python Personal/strcon.py ===================
+Enter s1 value:Hai
+enter s2 value:hai
+s1 string is less than s2
+>>> 
+=================== RESTART: D:/Python Personal/strcon.py ===================
+Enter s1 value:SriRam
+enter s2 value:JaiRam
+Both not same
+>>> 
+================================
+how to know ASCII value 
+----------------------
+>>> ord('A')
+65
+>>> ord('a')
+97
+>>> ord('h')
+104
+>>> ord('H')
+72
+>>> 
++++++++++++++++++++++++++++
+sms=input(("Enter a string:"))
+for val in sms:
+    print(val,end="   ")
+print()
+for odd in sms[-1::-1]:
+    print(odd)
+
+
+++++++++++++++++++++++++++++++++++
+==============================================================
+Emp:
+---
+empid 	emp_name  emp_mail   	empAddress
+-----	-------	  --------      ----------
+
+100	sairam	  sai@gmail.com   hyd
+101	sri	  sri@gmail.com	  sec
+102     devender  dev@ gamil.com  waramgal
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--> the use of string functions are do the manipulation of string object.
+
+===========================
+string functions
+---------------------------
+1. len()
+------
+--> the use len() functions is find the length of given 
+string
+
+eg:
+--
+p='dog eating biryani'
+>>> print(len(p))
+18
+>>> 
+====================================
+4. Removing spaces functions
+------------------------------------
+1. rstrip(): the use of rstrip() function is to remove right space 
+from given string.
+
+2. lstrip(): the use of lstrip() function is to remove left space 
+from given string.
+
+3. strip(): it can remove left space and right space also.
+
+eg:
+>>> s1='     Nihari'
+>>> print(s1)
+     Nihari
+>>> print(s1.lstrip())
+Nihari
+>>> s2='python       '
+>>> print(s2)
+python       
+>>> print(s2.rstrip())
+python
+>>> s3='     Nihari        '
+>>> print(s3)
+     Nihari        
+>>> print(s3.strip())
+Nihari
+>>> 
+===============================
+5. finding function
+---------------------
+forward direction
+1. find  
+2. index
+
+the use above functions are to fined value from left to right direction
+
+for backword direction
+1. rfind()
+2. rindex()
+
+the use above functions are to fined value from right to left direction
+
+1.find():
+----------
+eg:
+>>> p='Python is very easy'
+>>> print(p.find('y'))
+1
+>>> print(p.rfind('y'))
+18
+>>> print(p.rfind('sy'))
+17
+>>> print(p.rfind('very'))
+10
+>>> print(p.find('very'))
+10
+>>> print(p.find("ry"))
+12
+>>> print(p.index('is'))
+7
+>>> print(p.rindex('s'))
+17
+>>> print(p.rindex('is'))
+7
+>>> 
+=======================
+2. index():
+----------
+the use of index fun is to return index at given character
+
+eg:
+>>> a='Python is very easy'
+>>> print(a.find("is"))
+7
+>>> print(a.rfind("is"))
+7
+>>> print(a.rfind('easy'))
+15
+>>> s3='python is easy is hard'
+>>> print(s3.rfind('is'))
+15
+>>> print(s3.find('is'))
+7
+>>> print(s3.find('java'))
+-1
+>>> print(s3.index('y'))
+1
+>>> print(s3.index('i'))
+7
+>>> print(s3.rindex('i'))
+15
+>>> 
+
+
+================================
+--------------------------------
+6. count functions
+------------------
+1. count(): the use count() function is used to how many times sub string 
+occurence into the given string
+
+syntax:
+-------
+str.count('string',start, end)
+str.count('string')
+
+eg:
+---
+
+
+>>> s='abcabcaabcabc'
+>>> print(s.count('a'))
+5
+>>> print(s.count('ab'))
+4
+>>> print(s.count('abc'))
+4
+>>> print(s.count('a',3,9))
+3
+>>> 
+
+===================================
+3.replace(oldstring,new string):
+
+--> the use replace() function is to place with new string to old string
+eg:
+----
+
+
+
+
+
+
+>>> r='i hate python and i hate java'
+>>> print(r)
+i hate python and i hate java
+>>> print(r.replace("hate","Love"))
+i Love python and i Love java
+>>> print(r)
+i hate python and i hate java
+>>> print(r.replace("python","Love"))
+i hate Love and i hate java
+>>> new=r.replace("hate","Love")
+>>> print(new)
+i Love python and i Love java
+>>> new.replace("python","Love")
+'i Love Love and i Love java'
+>>> print(r)
+i hate python and i hate java
+>>> 
+==================================
+4.splitting of string
+
+    split(separator)
+
+-->divide given string in parts
+eg:
+---
+s='welcome to python class'
+l=s.split()
+for x in l:
+    print(x)
+
+======================
+output
+---------
+['welcome', 'to', 'python', 'class']
+welcome
+to
+python
+class
+
+-----------------------------
+5.change case strings 
+----------------------
+upper(): used to convert lower to upper case
+lower(): used to convert upper to lower case
+swapcase(): it can convert upper to lower and lower to upper 
+title(): like noun 
+capitalize():every time the first letter start with uppercase letter  
+
+
+eg
+--
+>>> y='YAKUB'
+>>> print(y.lower())
+yakub
+>>> t='srikanth'
+>>> print(t.upper())
+SRIKANTH
+>>> y.swapcase()
+'yakub'
+>>> t.swapcase()
+'SRIKANTH'
+>>> 
+>>> e="my name is yakub"
+>>> print(e.title())
+My Name Is Yakub
+>>> print(e.capitalize())
+My name is yakub
+>>> 
+
+==============================
+6. startswith()
+7.endswith()
+
+
+
+eg:
+---
+t='kruthika sri valli'
+>>> print(t.startswith('k'))
+True
+>>> print(t.startswith('t'))
+False
+>>> print(t.endswith('i'))
+True
+>>> 
+
+===========================
+character checking
+----------------------
+isalnum():  (A to Z ,a to z and 0 to 9)  
+isalpha(): (A to Z and a to z)
+isdigit(): (0 to 9)
+islower(): (a to z)
+isupper()" (A to Z)
+istitle(): (like nouns eg: Nihari,Navya,Anjali)
+isspace(): (Nihari priya)
+====================================
+>>> s='SriDevi16'
+>>> s.isalnum()
+True
+>>> s2='SRIdevi'
+>>> s2.isalpha()
+True
+>>> s3='9876543210'
+>>> s3.isdigit()
+True
+>>> s4='98797sai'
+>>> s4.isdigit()
+False
+>>> s5='yakub'
+>>> s5.islower()
+True
+>>> s5.isupper()
+False
+
+>>> s6='PYTHON'
+>>> s6.isupper()
+True
+>>> s6.islower()
+False
+>>> s7='My Name Is Yakub'
+>>> s7.istitle()
+True
+>>> s8='My name'
+>>> s8.istitle()
+False
+>>> 
+
+
+
+
+>>> d='yakub123'
+>>> print(d.isalnum())
+True
+>>> print(d.isalpha())
+False
+>>> print(d.isupper())
+False
+>>> print('123'.isdigit())
+True
+>>> print('RAJU'.istitle())
+False
+>>> 
+
+=======================================
+1. program for to print character at odd position and even position for 
+given string?
+2.program to merge character of 2 strings into a single strings by 
+taking  character alternatively?
+
+3. write a program to remove a duplicate characters from given input
+string?
+input: ABCDABBCDABBBCCCDDEEEF
+OUT: ABCDEF
+---------------------------------------------------
+
+len()
+rstrip()
+lstrip()
+strip()
+count()
+find()
+index()
+rfind()
+rindex()
+replace()
+split()
+lower()
+upper()
+swapcase()
+capitalize()
+title()
+starstwith()
+endswith()
+isalpnum()
+isalpa()
+isdigit()
+islower()
+isupper()
+istitle()
+isspace()
+isdecimal()
+
+
+ 
+1. How would you check if each word in a string begins with a capital letter?
+2. Find the index of the first occurrence of a substring in a string?
+3. Count the total number of characters in a string?
+4.Check if a string contains only numbers?
+5. Split a string on a specific character?
+6. Reverse the string “hello world”? 
+
+00.python program to print even length words in a string? 
+
+8.Python – Uppercase Half String?   Hello world---> HELLO world
+
+9.Python program to check if a string has at least one letter and one number?
+
+10.Python | Count the Number of matching characters in a pair of string?
+
+11.Python program to count number of vowels using sets in given string?
+
+12.Python program to check whether the string is  Palindrome?
+
+eg:
+madam----> madam
+
+
+
+sol:
+----
+
+
+string=input(("Enter a string:"))
+if(string==string[::-1]):
+      print("The string is a palindrome")
+else:
+      print("Not a palindrome")
+
+
+
+
+4: Arrange string characters such that lowercase letters should come first
+
+sol:
+str1 = "PyNaTive"
+lower = []
+upper = []
+for char in str1:
+    if char.islower():
+        lower.append(char)
+    else:
+        upper.append(char)
+sorted_string = ''.join(lower + upper)
+print("arranging characters giving precedence to lowercase letters:")
+print(sorted_string)
+===============================================
+5:Count all lower case, upper case, digits, 
+and special symbols from a given string?
+
+sol:
+-----
+def findDigitsCharsSymbols(inputString):
+    charCount = 0
+    digitCount = 0
+    symbolCount = 0
+    for char in inputString:
+        if char.islower() or char.isupper():
+            charCount+=1
+        elif char.isnumeric():
+            digitCount+=1
+        else:
+            symbolCount+=1
+      
+    print("Chars = ", charCount, "Digits = ", digitCount, "Symbol = ", symbolCount)  
+findDigitsCharsSymbols("P@#yn26at^&i5ve")
+print("total counts of chars, digits,and symbols \n")
+
+
+findDigitsCharsSymbols(inputString)
+===============================================
+
+
