@@ -1,0 +1,260 @@
+List Agenda
+--------------
+1. Introduction 
+2. Creating List
+3. Accessing List elements
+4.List functions
+5. aliasing and cloning in list
+6. matha metical functions in list
+7. nested List 
+8. List Comprehension
+++++++++++++++++++++++++++++++++++++++++++
+
+1. Introduction 
+-------------------
+--> list is used to hold similar data elements and desimilar data elements.
+--> Insertion order is preserved. 
+ 
+--> duplicate objects(elements) are allowed. 
+
+--> we can use same type ele and de similar element.
+
+--> list is dynamic type object.means we can increase the size and 
+decrease the size.
+
+
+--> The list object reprasent with [  ]  Square bracket.
+
+--> list is mutable objcet .
+ 
+-->to accessing list element using with indexing 
+ie. +ve index and -ve index.
+
+0 to n-1
+
+-1 to -n
+2. Creating List Object
+--------------------------
+
+List object create in 4 ways
+--> Static creation
+--> With Dynamic type using eval():
+--> With range() and list()
+--> With split() 
+
+-----------------------------------
+--> Static creation
+---------------------------
+lst=[]     # empty list
+rollno=[1,2,3,4,5]       #  integer values/homogeneous data elements
+
+salary=[1000.00,3500.75,4500.99]     # floating point values
+
+emp_record=[101,'sairam',3000.99,'A','address']    # hetrogenious data elements
+
+------------------------------------------------------------
+ex:
+----
+>>> lst=[]
+>>> type(lst)
+<class 'list'>
+>>> rollno=[1,2,3,4,5]
+>>> type(rollno)
+<class 'list'>
+>>> print(rollno)
+[1, 2, 3, 4, 5]
+>>> salray=[12.34,56.99,789.99]
+>>> type(salray)
+<class 'list'>
+>>> print(salray)
+[12.34, 56.99, 789.99]
+>>> emp_record=[101,'sairam',101,'aryan','sairam',340.99,'hyderabad']
+>>> type(emp_record)
+<class 'list'>
+>>> print(emp_record)
+[101, 'sairam', 101, 'aryan', 'sairam', 340.99, 'hyderabad']
+>>> 
+
+++++++++++++++++++++++++++++++++++++
+2. with dynamically (eval() function)
+--------------------------------------
+>>> student=eval(input("Enter student values:"))
+Enter student values:['radha','ravi','srinu','ravi']
+>>> type(student)
+<class 'list'>
+>>> print(student)
+['radha', 'ravi', 'srinu', 'ravi']
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++
+3. by using list() and range() function
+------------------------------------------
+>>> even_no=list(range(2,30,2))
+>>> type(even_no)
+<class 'list'>
+>>> print(even_no)
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+>>> rollno=list(range(1,11))
+>>> print(rollno)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++++
+4. by using split() function
+----------------------------
+>>> animals="tiger fox dog lion elephant"
+>>> s=animals.split()
+>>> type(s)
+<class 'list'>
+>>> print(s)
+['tiger', 'fox', 'dog', 'lion', 'elephant']
+>>> 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3. Accessing List elements
+__________________________________
+we can access list object values in 4 ways
+
+1. by using indexing
+2. by using slicing
+3. by using looping control statement (while and for loop)
+4. iter() and next()
+
+--------------------------------------------------------
+1. by using indexing
+---------------------------
+--> 
+list object also support +ve indexing and -ve indexing also
+
+here +ve index start with 0 to n-1
+here -ve index start with -1 to -n
+
+
+ex:
+----
+>>> even=[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+>>> len(even)
+14
+>>> print(even[0])
+2
+>>> print(even[3])
+8
+>>> print(even[-5])
+20
+>>> print(even[-14])
+2
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++
+2. by using slice (:):
+--------------------------------
+
+Syntax:
+=========
+
+[start:stop:stepsize]
+
+ex:
+---
+>>> animals=['Tiger','Lion','Fox','Dog','Cat']
+>>> print(animals[::1])
+['Tiger', 'Lion', 'Fox', 'Dog', 'Cat']
+>>> print(animals[::2])
+['Tiger', 'Fox', 'Cat']
+>>> print(animals[::3])
+['Tiger', 'Dog']
+>>> print(animals[1:4:2])
+['Lion', 'Dog']
+>>> print(animals[-1:-5:-2])
+['Cat', 'Fox']
+>>> print(animals[-1:-6:-2])
+['Cat', 'Fox', 'Tiger']
+>>> print(animals[-1:-6:-1])
+['Cat', 'Dog', 'Fox', 'Lion', 'Tiger']
+>>> print(animals[-1:-5:-1])
+['Cat', 'Dog', 'Fox', 'Lion']
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+3.by using looping control statement
+---------------------------------------
+1. while
+2. for loop
+
+ex:
+-----
+# accessing list elements with while loop
+animals=['Tiger','Lion','Fox','Dog','Cat']
+i=0
+while i<len(animals):
+    print(animals[i],end="  ")
+    i+=1
+
+OutPut
+======== RESTART: C:/Users/user/Desktop/SathyaTech Python/lstwhile.py ========
+Tiger
+Lion
+Fox
+Dog
+Cat'''
+
+Tiger  Lion  Fox  Dog  Cat 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+# accessing list elements with for loop
+animals=['Tiger','Lion','Fox','Dog','Cat']
+for item in animals:
+    print(item,end="     ")
+
+
+++++++++++++++++++++++++++++++++++++++++++
+1. program for create a list display elements in +ve order and -ve order
+using for loop and while loop?
+2. program for display only even numbers from 
+given list elements?
+use for and while loop?
+3.Python program to print all positive numbers and negative numbers in a range? 
+
+================================================================================
+4. by using iter() object and next()
+---------------------------------------
+ex:
+--
+# accessing list elements with for loop
+animals=['Tiger','Lion','Fox','Dog','Cat']
+obj=iter(animals)
+print(next(obj))
+print(next(obj))
+print(next(obj))
+
+
+output
+----------
+Tiger
+Lion
+Fox
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4. List Function
+-----------------------------------------------
+--> 
+we have 10 function
+
+1. len()
+2. count()
+3. extend()
+4. append()
+5. insert()
+6.pop()
+7. remove()
+8.sort()---> 
+
+--> sort(reverse=True)
+
+9. copy()
+10.index()
+11. min()
+12. max()
+13. sum()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
