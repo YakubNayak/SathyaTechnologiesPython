@@ -1,0 +1,260 @@
+List Agenda
+--------------
+1. Introduction 
+2. Creating List
+3. Accessing List elements
+4.List functions
+5. aliasing and cloning in list
+6. matha metical functions in list
+7. nested List 
+8. List Comprehension
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4. List Function
+-----------------------------------------------
+--> 
+we have 10 function
+1. len()
+2. count()
+3. extend()
+4. append()
+5. insert()
+6.pop()
+7. remove()
+8.sort()---> 
+8. reverse():
+--> sort(reverse=True)
+9. copy()
+10.index()
+11. min()
+12. max()
+13. sum()
+14.clear()--> obj.clear()
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. len()
+-------
+
+the use len() function is to fined length of given list object.
+
+ex:
+---
+
+lst=[10,20,30,40,50,60]
+print(len(lst))
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+2. count()
+------------
+---> the use of count() function to count how many times same is repeated.
+ex:
+----
+lst=[10,20,30,40,50,60,10,30,900,10]
+print(len(lst))
+print(lst.count(10))
+print(lst.count(30))
+
+yakub=[199.00,299.00,199.00,75.00]
+
+print(yakub.count(199.00))
+
+output
+-------
+10
+3
+2
+2
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4. extend()
+------------
+the use of extend() is to add new items in to existing list object.
+
+ex:
+>>> numbers=[1,3,5,7]
+>>> even_no=[2,4,6,8]
+>>> numbers.extend(even_no)
+>>> print(numbers)
+[1, 3, 5, 7, 2, 4, 6, 8]
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++
+5.append()
+-------------
+the use append() function is to append new elements to existing list object.
+
+ex:
+---
+food=['biryani','curd_rice','noddles']
+drinks=['cock','thumsup']
+
+food.append(drinks)
+print(food)
+
+
+output
+--------
+['biryani', 'curd_rice', 'noddles', ['cock', 'thumsup']]
+
++++++++++++++++++++++++++++++++++++++++++++++++
+6. insert()
+----------
+the use insert() function is to insert new item with index position.
+
+ex:
+----
+food=['biryani','curd_rice','noddles']
+food.insert(1,'cocke')
+
+print(food)
+food.insert(0,120)
+print(food)
+
+
+output
+----------
+['biryani', 'cocke', 'curd_rice', 'noddles']
+[120, 'biryani', 'cocke', 'curd_rice', 'noddles']
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+7.pop()
+---------
+stck(LIFO)
+--> the pop() function is used to remove last element first from given list object
+
+***--> after delete element pop() it can return that values.
+
+--> we can delete element bu using index also also with pop().
+
+ex:
+---
+>>> even_no=[2,4,6,8,10,12,14,16]
+>>> even_no.pop()
+16
+>>> print(even_no)
+[2, 4, 6, 8, 10, 12, 14]
+>>> even_no.pop(2)
+6
+>>> print(even_no)
+[2, 4, 8, 10, 12, 14]
+>>> 
++++++++++++++++++++++++++++++++++++++++++++++++
+8. remove()
+------------
+the use of remove() function to remove list object element by using values.
+
+***--> after delete element remove() it won't return that values.
+
+
+ex:
+---
+>>> even_no=[2,4,6,8,10,12,14,16]
+>>> even_no.remove(12)
+>>> print(even_no)
+[2, 4, 6, 8, 10, 14, 16]
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+9. sort()
+---------
+the use of sort() function is to sort in scending order 
+
+ex:
+--
+animals=['Tiger','Lion','Dog','Cat','rat']
+print("Bofore sort Animals Are=",animals)
+animals.sort()
+print("After sort Animals Are=",animals)
+no=[3,0,23,89,0,23,98,56]
+no.sort()
+print(no)
+print("=======================")
+
+
++++++++++++++++++++++++++++++++++++++++++++
+10.reverse()
+-----------------
+the use of reverse() function is keep list object element reverse order.
+
+ex:
+---
+>>> num=[0, 0, 3, 23, 23, 56, 89, 98]
+>>> num.reverse()
+>>> print(num)
+[98, 89, 56, 23, 23, 3, 0, 0]
+>>> lst=[8,1,3,6]
+>>> lst.reverse()
+>>> print(lst)
+[6, 3, 1, 8]
+>>> 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+11. sort(reverse=True)
+----------------------
+the use sort(reverse=True) function is to arrange list object elements in descending order.
+
+ex:
+---
+Bofore sort Animals Are= ['Tiger', 'Lion', 'Dog', 'Cat', 'rat']
+After sort Animals Are= ['rat', 'Tiger', 'Lion', 'Dog', 'Cat']
+[98, 89, 56, 23, 23, 3, 0, 0]
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++
+12. copy()
+----------
+the use copy() function copy one object element to in another object.
+
+ex:
+-----
+>>> student=[101,'sairam',9000.00,'hyd']
+>>> new_student=student.copy()
+>>> print(new_student)
+[101, 'sairam', 9000.0, 'hyd']
+>>> print(student)
+[101, 'sairam', 9000.0, 'hyd']
+
++++++++++++++++++++++++++++++++++++++
+13. index()
+-------------
+the use of index() function is it return index position with given values.
+
+ex:
+---
+>>> num=[1,2,3,4,5,6]
+>>> num.index(4)
+3
+>>> num.index(6)
+5
++++++++++++++++++++++++++++++++++++++++++++
+14. min(),max(),sum()
+ex:
+---
+>>> min(num)
+1
+>>> max(num)
+6
+>>> sum(num)
+21
+>>> 
+
+++++++++++++++++++++++++++++++++
+15. clear()
+---------
+>>> print(num)
+[1, 2, 3, 4, 5, 6]
+>>> num.clear()
+>>> print(num)
+[]
+>>> 
++++++++++++++++++++++++++++++++++++++++++++++++
+1. Python program to find sum of elements in list?
+2.Python program to find smallest number in a list?
+3.Python program to print all positive numbers and 
+negative numbers in a range? 
+
+
+
+ 
+
+
+
