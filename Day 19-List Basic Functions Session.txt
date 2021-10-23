@@ -1,0 +1,235 @@
+1. Python program to find sum of elements in list?
+2.Python program to find smallest number in a list?
+3.Python program to print all positive numbers and 
+negative numbers in a range? 
+4.program for to convert given list into comprahension list?
+
+# Python program to find sum of elements in list?
+lst=[]
+total=0
+n=int(input("Enter your List length"))
+for i in range(0,n):
+    print("Enter element")
+    v=int(input("enter list value:"))
+    lst.append(v)
+    total=total+lst[i]
+print(lst)
+print("Sum of given list ele are=",total)
+
+
+-----------------------------------------------------
+Mathematical operators for list object
+----------------------------------------
+1. +  concatenation  
+2. * multiplacation: repetation of list
+
+eg:
+-----
+fruits=['mango','apple','banana']
+animal=['Lion','Tiger','Fox']
+print(fruits+animal)
+print(animal*5)
+
+================================================
+comparing list objects(relational operators)
+------------------------
+relational operators
+-------------------------
+1. ==  and !=  operators
+
+ex:
+x=["Dog","Cat","Rat"]
+y=["Dog","Cat","Rat"]
+z=["DOG","CAT","RAT"]
+print(x==y)   # True
+print(x==z)   # False
+print(x!=z)  # True
+
+----------------------------
+
+2. < <= ,> >=
+----------------
+1. the number elements (len) 
+2. the order of elements
+3. the content of element(case sensitive).
+4. compare it will take only first value from given list.
+
+ex:
+
+a=[50,60,70]
+b=[100,20,30,100,600]
+print(a>b)     # False 
+print(a>=b)   # False
+print(a<b)
+print(a<=b)  # True
+
+=====================================
+ member ship operator
+============================
+1. in 
+2. not in 
+
+
+Eg
+---
+ 
+
+a=[50,60,70]
+b=[10,20,30,100,600]
+print(50 in a)
+print(50 not in a)
+print(100 in a)
+print(100 in b)
+print(600 not in b)
+
+
+=======================
+nested List
+=================
+---> sometimes we can take one list inside another list
+ is known as nested list.
+
+eg:
+----
+>>> n=[1,2,3,4,[10,20,30,40]]
+>>> print(n[0])
+1
+>>> print(n[4])
+[10, 20, 30, 40]
+>>> print(n[4][0])
+10
+>>> print(n[4][3])
+40
+>>> print(n[4][-1])
+40
+>>> print(n[4][-4])
+10
+>>> print(n[4][-1:-4:-1])
+[40, 30, 20]
+>>> 
+
+---------------------------
+n=[[10,20,30],[200,300,400],[800,600,500]]
+print(len(n))
+print(n)
+print(n[0]) #[10,20,30]
+print(n[-1]) #[800,600,500]
+print("Eelements by row wise:")
+for row in n:
+    print(row)
+print("====================")
+
+print("Element by matrix style")
+for i in range(len(n)):
+    for j in range(len(n[i])):
+        print(n[i][j],end=" ")
+    print()
+
+output
+----------
+3
+[[10, 20, 30], [200, 300, 400], [800, 600, 500]]
+[10, 20, 30]
+[800, 600, 500]
+Eelements by row wise:
+[10, 20, 30]
+[200, 300, 400]
+[800, 600, 500]
+====================
+Element by matrix style
+10 20 30 
+200 300 400 
+800 600 500 
+++++++++++++++++++++++++++++++++++++++++++++++
+list aliasing and cloning
+-----------------------------
+fruits=['banana','mango','apple']   # aliasing
+new_name=fruits  # cloning
+print(fruits)
+print(new_name)
+new_name[2]="kivy"
+print(fruits)
+
+=====================================
+List Comprehension
+-----------------------------
+eg:
+--> list comprehension is used to create a new list with existing list. 
+
+--> this one is shortest method to replace existing list elements with 
+new elements.
+
+Eg1:
+----
+square=[]   # empty list
+for i in range(1,11):  # 
+    square.append(i*2)
+print(square)
+print("=======================")
+new=[]
+old=[1,2,3,4,5]
+for i in old:
+    new.append(i+5)
+print(new)
+    
+print("=================")
+
+new_amont=[]
+blue=[100,100,100,100]
+for price in blue:
+    new_amont.append(price+50)
+print(new_amont)
+
+
+
+print("======================")
+fruits=['apple','banana','cherry','kiwi','mango']
+newlist=[]
+for x in fruits:
+    if 'a' in x:
+        newlist.append(x)
+print(newlist)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+------------------------------------------
+1. wirte program to display unique vowels present in given list?
+
+1. Python program to find sum of the given  list elements in?
+
+2.Python program to find smallest number  and biggest number in a list?
+
+3.Python program to print all positive numbers and 
+negative numbers in a range? 
+
+4.program for to convert given list into comprahension list?
+
+5. create a nested list and access those list elements using while loop?
+====================================================================
+
+lst=[]
+n=int(input("Enter number of elements:")) #5
+for item in range(n):
+    value=int(input("enter value:"))
+    lst.append(value)
+print(lst)
+sum=0
+for s in lst:
+    sum+=s
+print("sum of lst =",sum)
+
+
+output
+========
+Enter number of elements:5
+enter value:12
+enter value:30
+enter value:50
+enter value:80
+enter value:90
+[12, 30, 50, 80, 90]
+sum of lst = 262
++++++++++++++++++++++++++
+
+
+
+
+
