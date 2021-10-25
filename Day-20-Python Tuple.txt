@@ -1,0 +1,370 @@
+Python Tuple
+--------------
+1. tuple is used for to hold similar and de similar data elements
+2. tuple is immutable object.
+3. duplicate values allowed.
+4. insertion oreder is preserved.
+5. in object each and every element has 
+unique position is known as indexing.
+6. tuple also support indexing( +ve and -ve index).
+7. tuple object reprasent with (,)
+
+2. create a Tuple
+------------------
+1. tuple ceate with parenthesis ()   
+2. values are separated with , cama end with also ,
+eg
+--
+t=()    # empty tuple
+t=(10,20,30,40)    # tuple with same ele
+
+t2=(10.25,20.25,30.25)   # tuple floating point values
+
+emp=(100,"kavya",'nihari','hyd',9000.998)   # de similar type of tuple object
+
+
+
+
+
+>>> t=()
+>>> type(t)
+<class 'tuple'>
+>>> t=(120)
+>>> type(t)
+<class 'int'>
+>>> x=(123,)
+>>> type(x)
+<class 'tuple'>
+>>> y=('sai')
+>>> type(y)
+<class 'str'>
+>>> 
+---------------------------
+note:tuple object always ends with cama and values 
+are separated with cama.
+---------------------------------------------------------
+
+eg:
+
+----
+t=()     #  empty tuple object
+t=10,20,30,40   # valid
+t=10      # not valid
+t=(10)     # not valid
+t=(10,)  	# valid
+
++++++++++++++++++++++++++++++++++++++++++++++++
+2. creating tuple using range()
+-----------------------------------------------
+>>> number=tuple(range(1,20))
+>>> type(number)
+<class 'tuple'>
+>>> print(number)
+(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
+>>> 
+
++++++++++++++++++++++++++++++++++++++++
+creating tuple with eval() method
+---------------------------------
+Enter student tuple values:(9,'raju','ram','priya',70,80)
+<class 'tuple'>
+(9, 'raju', 'ram', 'priya', 70, 80)
+====================================================
+3. creating tuple with list also
+----------------------------------
+eg
+---
+>>> lst=[100,200,300,400,500]
+>>> tup=tuple(lst)
+>>> print(tup)
+(100, 200, 300, 400, 500)
+>>> r=(1,2,3,4)
+>>> l=list(r)
+>>> print(l)
+[1, 2, 3, 4]
+>>> 
+--------------------------------------------
+3. Accessing Tuple Ele
+--------------------------------------------
+1. Using Indexing
+2. using Slicing
+3. using looping 
+4. using iter() and next()
+----------------------------
+# Accessing Tuple ele with index
+------------------------------------
+>>> fruits=('apple','banana','mango','kiwi','graphes')
+>>> print(fruits[0])
+apple
+>>> print(fruits[4])
+graphes
+>>> print(fruits[-2])
+kiwi
+>>> print(fruits[-4])
+banana
+----------------------------------------
+2. using slicing
+------------------
+syntax: object_name[start:stop:stepsize]
+
+eg2:
+----
+>>> fruits=('apple','banana','mango','kiwi','graphes')
+>>> print(fruits[::2])
+('apple', 'mango', 'graphes')
+>>> print(fruits[0:3:3])
+('apple',)
+>>> print(fruits[-1:-5:-2])
+('graphes', 'mango')
+>>> 
+==========================================
+3. using loopong control statements
+1. for loop
+-----------
+fruits=('apple','banana','mango','kiwi','graphes')
+for ele in fruits:
+    print(ele)
+
+
+++++++++++++++++++++++++++++++++++
+2. while loop
+
+fruits=('apple','banana','mango','kiwi','graphes')
+i=0
+while i<len(fruits):
+    print(fruits[i])
+    i=i+1
+
+
+----------------------------------
+Acccessing tuple elements with iter() and next()
+---------------------------------------------
+animals_val=(100,'tiger',200,'fox','cat','lion','rat')
+print("using iter() and next()..........")
+obj=iter(animals_val)
+print(next(obj))
+print(next(obj))
+
+========================
+program for print tuple elements in reverse order
+-------------------------------------------------
+animals_val=(100,'tiger',200,'fox','cat','lion','rat')
+for i in animals_val[::-1]:
+    print(i)
+-------------------------------------------------------------
+fruits=('apple','banana','mango','kiwi','graphes')
+print("======Accesssing with index=============")
+print(fruits[1])   # banana
+print(fruits[-1])   # graphes
+print("======Accesssing with slicing=============")
+print(fruits[-1::-1])   #
+print(fruits[-1:-8:-2])
+print("======Accesssing with for loop=============\n")
+for item in fruits:
+    print(item, end=" ")
+print("======Accesssing with while loop=============\n")
+i=0
+while i<len(fruits):
+    print(fruits[i],end="  ")
+    i+=1
+
+print("======Accesssing with iter() and next()=============")
+obj=iter(fruits)
+print(next(obj))
+print(next(obj))
+print(next(obj))
+----------------------------------------------------
+====================================
+1. program for sum of given tuple element?
+2. program for to print tuple elements using for and while loop in 
+negative indexing?
+==============================
+1. Tuple mathematical operators
+------------------------------
+1. + concatenation (merging)
+2. * multiplication (repatation)
+eg:
+----
+fruits=('apple','banana','mango','kiwi','graphes')
+animal=("Lion","Tiger","Fox")
+merge=fruits+animal
+print(merge)
+print(animal*5)
+
+output
+------------
+('apple', 'banana', 'mango', 'kiwi', 'graphes', 'Lion', 'Tiger', 'Fox')
+('Lion', 'Tiger', 'Fox', 'Lion', 'Tiger', 'Fox', 'Lion', 'Tiger', 'Fox', 'Lion', 'Tiger', 'Fox', 'Lion', 'Tiger', 'Fox')
+
+------------------------------
+2. member shop operators
+-------------------------
+in and not in
+
+--> wheather the given element is avaialable or not in existing tuple object.
+--> every time membership operator can return either true/false.
+
+eg:
+fruits=('apple','banana','mango','kiwi','graphes')
+print('apple' in fruits)
+print("tiger" not in fruits)
+print("tiger" in fruits)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Tuple Functions
+------------------
+1. len(): 
+2. count():
+3. min():
+4. max():
+5. index(): 
+6. sorted():
+7.sorted(obj,reverse=True)  --> 
+8.reverse(): 
+
+
+-------------------------------------------------
+1. len(): to fined length of given tuple obj
+eg:
+---
+>> fruits=(9,'apple','banana','mango','kiwi','graphes')
+
+>>> print(len(fruits))
+6
+
+
+2. count(): print same value how many time repeated .
+---------
+eg:
+---
+>>> val=(1,2,3,4,5,6,1,3,4)
+>>> print(val.count(1))
+2
+>>> print(val.count(6))
+1
+
+
+3. index():
+--------
+ --> return index position using with given value:
+eg:
+---
+val=(1,2,3,4,5,6,1,3,4)
+>>> print(val.index(6))
+5
+>>> print(val.index(4))
+3
+>>> print(val.rindex(6))
+
+
+4. sorted():
+-----------
+To sort elements based on default natural sorting order.
+eg:
+----
+
+5. min()
+6. max()
+-----------------
+eg:
+---
+val=(900,20,300,400,100,600,6,100)
+print(" The length of value object=",len(val))
+c=val.count(100)
+print(c)
+print("to fined minimum value=",min(val))
+print("To fined maximum value=",max(val))
+print("to find value position=",val.index(400))
+print("Arrange elements in ascending order",sorted(val))
+print("Arrange elements in decending order",sorted(val,reverse=True))
+
+output
+==========
+The length of value object= 8
+2
+to fined minimum value= 6
+To fined maximum value= 900
+to find value position= 3
+Arrange elements in ascending order [6, 20, 100, 100, 300, 400, 600, 900]
+Arrange elements in decending order [900, 600, 400, 300, 100, 100, 20, 6]
+==========================
+val=(900,20,300,400,100,600,6,100)
+
+print(type(val))
+print(val)
+new_val=list(val)
+print(type(new_val))
+print(new_val)
+new_val.reverse()
+print(new_val)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Tuple Packing and Unpacking
+------------------------------
+we can create a tuple by packing a group of variable.
+
+eg
+---
+a=100
+b=200
+c=400
+t=a,b,c     # packing
+print(type(t))
+print(t)
+==========================
+un packing
+----------
+t=(10,20,30,40)
+a,b,c,d=t
+print('a=',a,'b=',b,'c=',c,'d=',d)
+
+note: At the time of tuple unpacking the number of variables
+and numbers values should be same  other wise we will get
+
+ValueError: too many values to unpack
+----------------------------------------
+--> Tuple Comprehension
+---------------------------------
+--> nested tuple
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------------------------
+1. program for using Tuple Comprehension?
+
+2. write differenece b/w List and Tuple?
+
+1.Write a Python program to find the repeated items of a tuple? 
+
+2.Write a Python program to check whether an element exists within a tuple?  
+ 
+3.Write a Python program to convert a list to a tuple.?
+
+4.Write a Python program to remove an item from a tuple? 
+
+5. Write a Python program to reverse a tuple.?
+
+6.Write a Python program to create a tuple with different data types access 
+with while loop? and for loop?
+
+7.Dmart Tuple object?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
