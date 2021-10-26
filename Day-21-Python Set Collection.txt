@@ -1,0 +1,327 @@
+Python Set
+-----------
+--> If we want represent a group of unique as a single entity
+then we should go for set.
+ex: student_rollno={1,2,3,4,5}
+emp_id={10,20,30,40}
+adharcard_no={12345677,0987766}
+
+
+a={1,2,3}
+
+
+--> duplicate are not allowed
+--> insertion oredr is not preserved.but we can sort the ele.
+--> indexing and slicing not allowed.
+
+--> we can access set ele using for loop and iter() and next()
+--> we can create set object similar and desimilar also.
+
+--> set is a immutable object.
+
+--> we can apply mathematical operations like
+union,intersection, differences,etc.used with set object.
+
+2. creating set object
+------------------------
+--> create set object with {} curly braces.
+
+1. 
+eg
+---
+
+val={1,2,3,5}    # all are similar type (only integer group of ele)
+salary={10.25,30.25,40.75}   # all are floating piont values)
+
+student={10,"Kavya",10000.987,"Hyderabad"}
+
+eg1:
+----
+>>> val={1,2,3,45}
+>>> type(val)
+<class 'set'>
+>>> sal={10.25,20.25,40.75}
+>>> type(sal)
+<class 'set'>
+>>> stu={10,'kavya',9000.99,'hyd'}
+>>> type(stu)
+<class 'set'>
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+creating with range()
+==================
+s=set(range(5,50,5))
+print(type(s))
+print(s)
+
+output
+=======
+<class 'set'>
+{35, 5, 40, 10, 45, 15, 20, 25, 30}
+
+=======================================
+3.creating set obj with list and tuple
+======================================
+
+mobile=['oppo','mi','nokia','samsung','vivo']
+s=set(mobile)
+print(s)
+print(type(s))
+mobile2=('oppo','mi','nokia','samsung','vivo')
+s2=set(mobile2)
+print(s2)
+print(type(s2))
+
+----------------------------------------------
+4. creating set using eval()
+------------------------------
+s=eval(input("enter set elements"))
+
+print(s)
+============================================
+3. Accessing set element
+-------------------------
+--> for accessing set elements not support indexing and slicing concept.
+
+eg:
+>>> mobiles={'vivo','mi','nokia','samsung','apple','oneplus'}
+>>> type(mobiles)
+<class 'set'>
+>>> print(mobiles[0])
+>>> print(mobiles[::2])
+
+TypeError: 'set' object does not support indexing
+TypeError: 'set' object is not subscriptable
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. we can access set ele using for loop only
+eg:
+--
+s={100,200,300,400}
+for i in s:
+    print(i)
+
+
+mobiles={'vivo','mi','nokia','samsung','apple','oneplus'}
+for val in mobiles:
+    print(val,end="  ")
+print()
+print(" using iter() and next ().........")
+i=iter(mobiles)
+print(next(i))
+print(next(i))
+
+
+==================
+Note: we won't access set ele using indexing,slicing and while loop
+==================================================
+4. set functions
+---------------
+1. add():
+---------
+--> use of add() function is to add new element to existing set object
+eg
+--
+s={100,200,300,400}
+print('before add element s=',s)
+s.add(500)
+print('after add new element s=',s)
+
+
+output
+--------
+before add element s= {200, 100, 400, 300}
+after add new element s= {100, 200, 300, 400, 500}
+>>> 
+
+===============
+2. update():
+--------------
+--> using update() we can add multiple new elements.
+eg:
+---
+s={100,200,300,400}
+print('before updates=',s)
+r={90,7,5,4}
+s.update(r)
+print('after update s=',s)
+
+ex2
+----
+>>> animals={'tiger','fox'}
+>>> flower={'liily','rose'}
+>>> animals.update(flower)
+>>> print(animals)
+{'liily', 'rose', 'tiger', 'fox'}
+>>> 
+
+output
+-------
+before updates= {200, 100, 400, 300}
+after update s= {100, 4, 5, 7, 200, 300, 400, 90}
+
+
+==================================
+3.copy():
+----------
+copy() function is used to copy elements one object to another
+eg:
+s={100,200,300,400}
+print('before copy element s object=',s)
+new=s.copy()
+print('after copy new element new object=',new)
+
+before copy element s object= {200, 100, 400, 300}
+after copy new element new object= {200, 100, 400, 300}
+
+ex2
+---
+>>> old={1,2,3,4}
+>>> new=old.copy()
+>>> print(new)
+{1, 2, 3, 4}
+>>> print(old)
+{1, 2, 3, 4}
+>>> 
+========================
+4. pop():
+----------
+-- the use of pop() function is to remove element from set randomly 
+
+eg:
+----
+s={900,200,300,400,500,600,100}
+s.pop()
+print(s)
+
+{100, 200, 300, 400, 500, 600}
+
+Note: After delete element it can return value also
+
+exp
+---
+>>> st={100,200,300,400,500}
+>>> st.pop()
+100
+>>> print(st)
+{200, 300, 400, 500}
+>>> st.pop()
+200
+>>> print(st)
+{300, 400, 500}
+>>> 
+==========================
+5. remove():
+------------
+--> it removes specified element from given set.
+eg:
+---
+s={100,200,300,400}
+s.remove(200)
+print(s)
+s.discard(300)  
+print(s)
+s.discard(900) 
+---------------------------------
+6. discard():
+------------
+--> it removes the specified element from the set.
+
+if the specified element not prsent in the set then won't get any error.
+---------------------------
+7. clear():
+----------
+to remove all element from given set.
+
+s={100,200,300,400}
+print(s)
+s.clear()
+print(s)
+-------------------------------------
+-->add(),update(),copy(),pop(),remove(),discard(),clear()
+-----------------------------------------------
+4. Mathematical Operators
+-------------------------
+1. union()      or      x|y
+---------
+2. intersection()   or  x&y
+3. difference()     or  x-y
+4.symmentric_difference()    or 
+---------------------------------
+eg:
+----
+s={1,2,3,4,5}
+s1={6,7,8,9,1,3}
+print(s.union(s1))
+print(s|s1)
+print("Intersection ele")
+print(s.intersection(s1))
+print(s&s1)
+print("Differences  ele")
+print(s.difference(s1))
+print(s-s1)
+print("Symmetric_difference ele")
+print(s.symmetric_difference(s1))
+print(s^s1)
+
+
+output
+-------
+{1, 2, 3, 4, 5, 6, 7, 8, 9}                                                                                        
+{1, 2, 3, 4, 5, 6, 7, 8, 9}                                                                                        
+Intersection ele                                                                                                   
+{1, 3}                                                                                                             
+{1, 3}                                                                                                             
+Differences  ele                                                                                                   
+{2, 4, 5}                                                                                                          
+{2, 4, 5}                                                                                                          
+Symmetric_difference ele                                                                                           
+{2, 4, 5, 6, 7, 8, 9}                                                                                              
+{2, 4, 5, 6, 7, 8, 9}
+
+==============================
+set comprahesion
+------------------------------
+
+--> the proccess of creating new set object with existing set object element.
+is known set comprahension.
+--> we must use for loop.
+
+val={1,2,3,4,5}
+s={0,}
+for i in val:
+    v=i*2
+    s.add(v)
+print(s)
+
+++++++++++++++++++++++++++++++
+membership operators in set
+------------------------------
+1. in and not in
+eg:
+---
+>>> st={1, 2, 3, 4, 5, 6, 7, 8, 9}
+>>> print(1 in st)
+True
+>>> print(10 not in st)
+True
+>>> print(10 in st)
+False
+>>> 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. program for print comman element from given list?
+
+2. program for print different values from given list?
+
+3. program for print all elements from given set according to index
+and arrange that ele in acending and descending order?
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
