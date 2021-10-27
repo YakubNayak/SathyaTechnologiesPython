@@ -1,0 +1,127 @@
+1. Introduction
+---------------
+
+road_no=163
+
+dict={"road_no":163}
+
+raod_no---> key
+163--> value
+
+{key:value}--->pair
+-----------------------------------
+--> we can arrange group data element in dictiinary also
+
+--> but in dictionary the values are represent in the form
+key: value   pair
+
+--> Dictionary represents group of elements arranged in the form of key-value pairs.
+
+--> In the dictionary , the first element is consider as key and the immediate next element taken as its Value.
+
+ --> The key and value separated by a colon(:).
+And the key-value pairs in a dictionary are inserted in curly brace {}.
+
+
+Ex: dict={‘name’:”yakub”,’id’:200,’sal’:9840.09}
+
+
+--> duplicate keys not allowed but values are allowed.
+ex:
+---
+     adharcard={'123':"ravi",'345':'sairam',"789":"ravi"}
+print(adharcard)
+
+--> Hetrogenous object are allowed for both key and value.
+--> dictinary is mutable object.
+--> insertion order is not preserved.
+--> dictinories dynamic.
+--> dict not support indexing and slicing.
+ 
+-----------------------------------------
+2. creating Dictionary elements
+---------------------------------
+--> to create dic using with key value pair between curly braces {}.
+
+eg:
+---
+>>> d={}   # empty dict
+>>> type(d)
+<class 'dict'>
+>>> rollno={'a':10,'b':20,'c':30}   # key in string ---> values in number
+>>> type(rollno)
+<class 'dict'>
+>>> print(rollno)
+{'a': 10, 'b': 20, 'c': 30}
+>>> dct={1:120,2:220,3:330}  # 1,2,3 are keys values are 120,220 ,330
+>>> type(dct)
+<class 'dict'>
+>>> print(dct)
+{1: 120, 2: 220, 3: 330}
+>>> d2={10.00:10,20.25:90}
+>>> type(d2)
+<class 'dict'>
+>>> print(d2)
+{10.0: 10, 20.25: 90}
+>>> emp={'id':101,'name':'Yakub',10:9000.00,'g':1,'salary':30000.45}
+>>> type(emp)
+<class 'dict'>
+>>> print(emp)
+{'id': 101, 'name': 'Yakub', 10: 9000.0, 'g': 1, 'salary': 30000.45}
+>>> 
+
+
+2 nd way creation dict object is using aval()
+-------------------------------------------------
+student=eval(input("Enter student dict values:"))
+print(type(student))
+print(student)
+
+output
+--------
+Enter student dict values:{'sid':109,'sname':'ravi','fee':7500.75,'saddress':'benguloor'}
+<class 'dict'>
+{'sid': 109, 'sname': 'ravi', 'fee': 7500.75, 'saddress': 'benguloor'}
+----------------------------------------------------------------
+3. Accessing Dic elements
+--------------------------
+1. we can't access dic ele using indexing ,slicing
+
+>>> stu={'sid':109,'sname':'ravi','fee':7500.75,'saddress':'benguloor'}
+>>> print(stu[0])
+
+KeyError: 0
+
+>>> print(stu[::1])
+
+TypeError: unhashable type: 'slice'
++++++++++++++++++++++++++++++++++++++
+but we can access dictionary elements by using keys
+
+2. using with keys
+---------------------
+--> 
+>>> print(stu['sid'])
+109
+>>> print("My name=",stu['sname'])
+My name= ravi
+>>> print("My Address=",stu['saddress'])
+My Address= benguloor
+
+3. we can access with for loop also.
+++++++++++++++++++++++++++++++++++++Date: 01-06-2021===========
+dictionary functions
+---------------------
+1. copy()
+2. clear()
+3. fromkeys()
+4. get()
+5.setdefault()
+6.items()
+7.values()
+8.keys()
+9.update()
+10.popitem()
+11. pop()
+1. clear()
+----------
