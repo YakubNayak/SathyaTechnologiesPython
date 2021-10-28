@@ -1,3 +1,4 @@
+// string comparisiom with relational operators
 s1=input("Enter s1 value:")
 s2=input("enter s2 value:")
 if s1==s2:
