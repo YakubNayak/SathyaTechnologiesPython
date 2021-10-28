@@ -1,3 +1,4 @@
+# String Case Methods
 name='python'
 s1='VIRAT KHOHILI'
 s2='python is very easy'
