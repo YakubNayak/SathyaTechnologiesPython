@@ -1,0 +1,274 @@
+dictionary functions
+---------------------
+1. copy()
+2. clear()
+3. fromkeys()
+4. get()
+5.setdefault()
+6.items()
+7.values()
+8.keys()
+9.update()
+10.popitem()
+11. pop()
+1. clear()
+----------
+--> the use of clear() method is to clear dic object elements.
+
+>>> person2={'pid':120,'pname':"Ravi",'page':25}
+>>> print(person2)
+{'pid': 120, 'pname': 'Ravi', 'page': 25}
+>>> print(person2.clear())
+None
+>>> person2.clear()
+>>> print(person2)
+{}
+>>> 
+------------------------------------------------
+2.Copy (): Copies all elements from existing dict object to  (clone) into a new dictionary object aliasing name
+
+>>> person={'pid':120,'pname':"Ravi",'page':25}
+>>> print(person)
+{'pid': 120, 'pname': 'Ravi', 'page': 25}
+>>> new_record=person.copy()
+>>> print(new_record)
+{'pid': 120, 'pname': 'Ravi', 'page': 25}
+>>> 
+
+------------------------------------------------------
+3. Fromkeys(): 
+
+--> returns a new dictionary with the given sequence 
+of element as the keys of the dictionary.
+
+Syntax:
+-------  
+
+dict.fromkeys(sequence,value)
+
+sequence: is keys
+value: values
+
+Eg:
+---
+ 
+>>> keys={'a',"e","i","o","u"}
+>>> print(keys)
+{'e', 'a', 'o', 'i', 'u'}
+>>> print(dict.fromkeys(keys))
+{'e': None, 'a': None, 'o': None, 'i': None, 'u': None}
+>>> values="vowels"
+>>>  print(dict.fromkeys(keys,values))
+SyntaxError: unexpected indent
+>>> print(dict.fromkeys(keys,values))
+{'e': 'vowels', 'a': 'vowels', 'o': 'vowels', 'i': 'vowels', 'u': 'vowels'}
+>>> brand1={1,2,3,4,5}
+>>> price=499.00
+>>> print(dict.fromkeys(brand1,price))
+{1: 499.0, 2: 499.0, 3: 499.0, 4: 499.0, 5: 499.0}
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Get () method:
+--------------
+The get () method returns the value for the specified key if key is in dictionary.
+
+
+
+The syntax of get() is:
+dict.get(key,value) 
+
+Eg:
+---
+>>> emp={"id":200,"name":'Aryan',"address":'sec','grade':"A"}
+>>> print("My emp id",emp.get('id'))
+My emp id 200
+>>> print("My emp Name:",emp.get('name'))
+My emp Name: Aryan
+>>> print("My emp salary",emp.get('salary'))
+My emp salary None
+>>> print(emp)
+{'id': 200, 'name': 'Aryan', 'address': 'sec', 'grade': 'A'}
+>>> print("My emp bonus:",emp.get('bonus',98765.999))
+My emp bonus: 98765.999
+>>> print(emp)
+{'id': 200, 'name': 'Aryan', 'address': 'sec', 'grade': 'A'}
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++++
+setdefault():
+-------------
+The setdefault() method returns the value of a key 
+(if the key is in dictionary). 
+
+If not, it inserts key with a value to the dictionary.
+
+
+eg:
+----
+>>> print("My Person name=",person.setdefault('name'))
+My Person name= Aryan
+>>> print(person)
+{'id': 200, 'name': 'Aryan', 'address': 'sec', 'grade': 'A'}
+>>> print("My salary=",person.setdefault('salary',9000.75))
+My salary= 9000.75
+>>> print(person)
+{'id': 200, 'name': 'Aryan', 'address': 'sec', 'grade': 'A', 'salary': 9000.75}
+>>> 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+items()
+------
+The items() method returns a view object, that displays a list of 
+dictionary's  elements  in (key, value) tuple pairs.
+
+
+>>> print(person.items())
+dict_items([('id', 200), ('name', 'Aryan'), ('address', 'sec'), ('grade', 'A'), ('salary', 9000.75)])
+>>> 
+
+=======================================
+keys()
+------
+The keys() method returns a view object that displays 
+a list of all the keys in the dictionary.
+
+eg:
+---
+>>> print(p.keys())
+dict_keys(['id', 'name', 'address', 'grade', 'salary'])
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Values():
+return the sequence of values from dictionary.
+
+eg:
+>>> p={'id': 200, 'name': 'Aryan', 'address': 'sec', 'grade': 'A', 'salary': 12300.0}
+>>> print(p.values())
+dict_values([200, 'Aryan', 'sec', 'A', 12300.0])
+>>> 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Update(): 
+
+-->add the new key-value pair in dictionary
+
+Object.update(new_objcet)
+
+EG:
+----
+products={'pid':120,'pname':'shirts','praice':999.99,'quantity':2}
+products.update({'company':'puma'})  # single pair
+print(products)
+print("=============================================")
+
+products2={"nike":120,'wrongler':40,'lives':450}
+products.update(products2)
+print(products)
+
+output
+-----
+
+{'pid': 120, 'pname': 'shirts', 'praice': 999.99, 'quantity': 2, 'company': 'puma'}
+=============================================
+{'pid': 120, 'pname': 'shirts', 'praice': 999.99, 'quantity': 2, 'company': 'puma', 'nike': 120, 'wrongler': 40, 'lives': 450}
+      
+
+
++++++++++++++++++++++++++++++++
+popitem(): delete the item randomly not in order.
+
+----------
+
+eg:
+---
+product={'pid':120,'pname':'shirts','praice':999.99,'quantity':2}
+r=product.popitem()
+print(product)
+      
+
+output
+-----
+{'pid': 120, 'pname': 'shirts', 'praice': 999.99}
+
+---------------------------------------------
+eg2:
+--
+>>> product={'pid':120,'pname':'shirts','praice':999.99,'quantity':2}
+>>> print(product.popitem())
+('quantity', 2)
+>>> print(product.popitem())
+('praice', 999.99)
+>>> 
+
+++++++++++++++++++++++++++++++++++++++++++++++
+pop()
+-----
+
+The pop() method removes and returns an element from a 
+dictionary having the given key.
+
+
+eg1:
+---
+>>> product={'pid':120,'pname':'shirts','praice':999.99,'quantity':2}
+>>> print(product.pop('pname'))
+shirts
+>>> print(product)
+{'pid': 120, 'praice': 999.99, 'quantity': 2}
+>>> 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. copy():
+2. clear()
+3. fromkeys()
+4. get()
+5.setdefault()
+6.items()
+7.values()
+8.keys()
+9.update()
+10.popitem()
+11. pop()
+
++++++++++++++++++++++++
++++++++++++++++++++++
+----------------------------------------
+1. program to enter name and percentage marks in a dict and display 
+information on the out put screen?
+
+name--> key
+marks---> values
+----------------------
+
+rec={}
+n=int(input("enter number of student:"))
+i=0
+while i<n:
+    name=input("enter your name:")
+    marks=int(input("enter your marks:"))
+    rec[name]=marks
+    i=i+1
+print("Name of students","\t","Student Marks")
+for x in rec:
+    print(x,"\t",rec[x])
+
+----------------------------------------
+d={'id':[10,20,20],'no':(10,20,40),'name':'saiarm','x':900}
+We can use any data types in values:
+Ex: number, string list and tuples
+
+
+Key Rules:
+1. Key value is unique it means duplicate key are not allowed if enter same key again the old key will be overwritten and new key will be available
+x={'id':20,'name':"yakub",'id':30}
+>>> print(x)
+{'id': 30, 'name': 'yakub'}
+2. Key should be immutable type ex: we can use a numbers strings or tuples as key since they are immutable.but we can’t use list or dictionary as keys if they use we will get ‘Type Error’
+>>> x={['id']:20,'name':"yakub",'id':30}
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    x={['id']:20,'name':"yakub",'id':30}
+TypeError: unhashable type: 'list'
+
+=================================================
+
