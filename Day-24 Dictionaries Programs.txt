@@ -1,0 +1,93 @@
+
+Write a python program Create a dictionary with cricket players’ names and scores in a match .
+also we are retrieving runs by entering the player’s names?
+
+
+
+# converting list into dictionaries?
+
+#Converting a string into dictionary?
+
+
+# Accessing dictinaries elements by using for loop?
+
+
+
+
+
+
+
+x={}
+print('how many players  ?=',end='')
+n=int(input())
+for i in range(n):
+	print('enter players names:',end=' ')	
+	k=input()
+	print("enter runs:",end=' ')
+	v=int(input())
+	x.update({k:v})
+	print(x)
+print('players in match:')
+for pname in x.keys(): # will display give only key value
+  	print(pname)
+
+print('enter player name:',end=' ')
+name=input()
+
+runs=x.get(name,-1)
+if(runs==-1):
+	print('player not found')		
+else:
+	print('{}= made runs:{}.'.format(name,runs))
+
+
+==================================================================
+# converting list in todictionaries
+
+
+countries=["usa","india","germany","france"]
+cities=['washington','new delhi','berlin','paris']
+#make a dictionary
+z=zip(countries,cities)
+print(z)
+d=dict(z)
+print(d)
+
+print('{:25s}---{:15s}:'.format('COUNTRY','CAPITAL'))
+for k in d:
+       
+        print('{:25s}---{:15s}'.format(k,d[k]))
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#Converting a string into dictionary 
+str="sai=10,pavan=20,priya=30.09,deeshitha=20,anusha=20,chandana=24"
+lst=[]
+for x in str.split(','):
+	y=x.split('=')
+	print(x)
+	print(y)
+	lst.append(y)
+#convert the list into dictionary
+d=dict(lst)
+print(d)
+
+# create the new dictionary 'd1' with name as string
+d1={}
+for k,v in d.items():
+	d1[k]=v
+print(d1)
+	
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
+# Accessing dictinaries elements by using for loop
+
+colors={'r':'red','g':'green','b':'blue','w':'white'}
+for k in colors:
+	print(k)
+# display the values
+for v in colors:
+	print(colors[v])
+# display the items in dictionary
+for k,v in colors.items():
+	print('key={},value={}'.format(k,v))
++++++++++++++++++++++++++++++++++++++++++++++++++++++
