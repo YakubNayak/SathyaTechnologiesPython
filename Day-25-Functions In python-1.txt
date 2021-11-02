@@ -1,0 +1,141 @@
+# non functional programing 
+n1=100
+n2=300
+print(n1+n2)
+x=10
+y=40
+print(x+y)
+x=10
+y=40
+print(x-y)
+
+// code duplication
+//no-reuseability
+//no -modularity
+//no code optimization
+====================================
+Python Functions
+----------------
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+
+#functional programing 
+
+def add():
+    n1=int(input("Enter N1 value:"));
+    n2=int(input("Enter N2 value:"));
+    print(n1+n2)
+def sub():
+    n1=int(input("Enter N1 value:"));
+    n2=int(input("Enter N2 value:"));
+    print(n1-n2)
+add()
+add()
+
+sub()
+======================================
+--> function is  group of statements.
+1. built in functions: 
+---------------------
+
+2. user defined function
+
+
+Advantage of functions
+-----------------------
+-->By using functions, we can avoid rewriting same logic/code again 
+and again in a program.
+
+-->We can call python functions any number of times in a program and 
+from any place in a program.
+
+-->We can track a large python program easily when it is divided into
+ multiple functions.
+
+-->Reusability is the main achievement of python functions.
+--> we are acheieving code optimization ,means reduce lines of code.
+
+
+However, Function calling is always a overhead in a python program.
+-----------------------------------------------------------------------
+
+--> function is  group of statements.
+
+in python fubctions are 2 types
+
+1. built in functions or predefined function
+
+2. user defined function
+
+--------------------------------------------
+1. built in functions or predefined function
+--------------------------------------------
+--> which functions are provided by python software or 
+which function are provided by python programing language it self
+is known as built in functions or predefined function
+
+eg:
+--
+type()
+id()
+copy()
+extend()
+print()
+update()
+del
+index()
+input()
+int()
+float()
+complex() print() sort()
+pop()
+popitem()
+isalpha()
+split()
+
+
+--------------------------
+2. user defined functions
+--------------------------
+--> some times programmer want to create his own functions 
+such type of functions known as user defined functions.
+
+1. creating a user defined function
+------------------------------------
+--> in python user defined function can defined using with "def keyword".
+--> function can return value and print value also.
+
+
+syntax:
+--------
+(prepare a called function)
+
+def function_name(argu1,argu2.....argu_n):
+	stmt1
+	stmt2
+	stmt3
+
+eg
+---
+def myfunction():
+	print("Hai.....")
+
+------------------------------------
+prepare a calling function
+---------------------------
+function_name()
+
+obj=function_name()
+
+Note:
+------
+when prepare a function it won't execute it self we need to call
+if you want call that function using with function name.
+
+EX:
+----
+def sum(n1,n2):   # here n1,n2 formal parameters/arguents # called function
+    result=n1+n2
+    print("Result=",result)
+sum(10,30)    # here 10,30 are actual parameters/arguments  # calling function
